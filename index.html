@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="CRM Flow Lab — GoHighLevel expert agency for agency owners and small businesses. We build your entire GHL system: funnels, automations, CRM pipelines, and lead generation." />
+  <title>CRM Flow Lab | #1 GoHighLevel Expert Agency</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Scroll progress line -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#" class="logo">
+        <span class="logo-crm">CRM</span><span class="logo-flow"> Flow</span><span class="logo-lab"> Lab</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#services"     class="nav-link">Services</a></li>
+        <li><a href="#tools"        class="nav-link">Why GHL</a></li>
+        <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+        <li><a href="#pricing"      class="nav-link">Pricing</a></li>
+        <li><a href="#contact"      class="nav-link">Contact</a></li>
+        <li><a href="#contact" class="btn btn-primary nav-cta">Book a Free Call</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="grid-pattern"></div>
+      <canvas id="particleCanvas"></canvas>
+    </div>
+
+    <div class="container hero-inner">
+
+      <!-- LEFT: Text -->
+      <div class="hero-content">
+        <div class="hero-badge fade-up">
+          <span class="badge-dot"></span>
+          GoHighLevel Certified Expert
+        </div>
+        <h1 class="hero-title fade-up">
+          The <span class="highlight">#1 GoHighLevel</span><br />
+          Expert That Automates<br />
+          <span id="heroTyped" class="hero-typed"></span><span class="typed-cursor">|</span>
+        </h1>
+        <p class="hero-subtitle fade-up">
+          We build your entire GHL system — funnels, automations, CRM pipelines,
+          and lead generation — so you can focus on closing deals, not tech.
+        </p>
+        <div class="hero-actions fade-up">
+          <a href="#contact" class="btn btn-primary btn-lg btn-glow">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            Book a Free Call
+          </a>
+          <a href="#services" class="btn btn-ghost btn-lg">
+            See Our Services
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+          </a>
+        </div>
+        <div class="hero-stats fade-up">
+          <div class="stat">
+            <span class="stat-number count-up" data-target="50" data-suffix="+">0+</span>
+            <span class="stat-label">GHL Systems Built</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-number count-up" data-target="100" data-suffix="%">0%</span>
+            <span class="stat-label">Client Satisfaction</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-number">3x</span>
+            <span class="stat-label">Avg. Lead Increase</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: Dashboard visual -->
+      <div class="hero-visual fade-up">
+
+        <!-- Main CRM dashboard card -->
+        <div class="db-card">
+          <div class="db-header">
+            <div class="db-dots">
+              <span class="db-dot" style="background:#FF5F57"></span>
+              <span class="db-dot" style="background:#FEBC2E"></span>
+              <span class="db-dot" style="background:#28C840"></span>
+            </div>
+            <span class="db-title">CRM Pipeline — Live</span>
+            <span class="db-live"><span class="live-pulse"></span>LIVE</span>
+          </div>
+
+          <div class="pipeline-stages">
+            <div class="p-col">
+              <div class="p-label">New Leads</div>
+              <div class="p-num">24</div>
+              <div class="p-bar"><div class="p-fill" style="--w:80%"></div></div>
+            </div>
+            <div class="p-col">
+              <div class="p-label">Contacted</div>
+              <div class="p-num">18</div>
+              <div class="p-bar"><div class="p-fill" style="--w:60%"></div></div>
+            </div>
+            <div class="p-col">
+              <div class="p-label">Proposal</div>
+              <div class="p-num">11</div>
+              <div class="p-bar"><div class="p-fill" style="--w:38%"></div></div>
+            </div>
+            <div class="p-col">
+              <div class="p-label">Closed ✓</div>
+              <div class="p-num green">8</div>
+              <div class="p-bar"><div class="p-fill p-fill-green" style="--w:26%"></div></div>
+            </div>
+          </div>
+
+          <div class="db-chart">
+            <div class="chart-bars">
+              <div class="chart-bar" style="--h:42%"><span>M</span></div>
+              <div class="chart-bar" style="--h:67%"><span>T</span></div>
+              <div class="chart-bar" style="--h:50%"><span>W</span></div>
+              <div class="chart-bar" style="--h:83%"><span>T</span></div>
+              <div class="chart-bar" style="--h:60%"><span>F</span></div>
+              <div class="chart-bar chart-bar--active" style="--h:95%"><span>S</span></div>
+              <div class="chart-bar" style="--h:55%"><span>S</span></div>
+            </div>
+            <div class="chart-label">Weekly Lead Activity ↑ 47%</div>
+          </div>
+        </div>
+
+        <!-- Floating notification cards -->
+        <div class="notif notif-1">
+          <div class="notif-icon-wrap">🎯</div>
+          <div class="notif-body">
+            <div class="notif-title">New Lead Captured!</div>
+            <div class="notif-sub">Sarah M. submitted your funnel</div>
+          </div>
+          <div class="notif-time">just now</div>
+        </div>
+
+        <div class="notif notif-2">
+          <div class="notif-icon-wrap">⚡</div>
+          <div class="notif-body">
+            <div class="notif-title">Automation Triggered</div>
+            <div class="notif-sub">Welcome SMS sequence sent</div>
+          </div>
+        </div>
+
+        <div class="notif notif-3">
+          <div class="notif-icon-wrap">⭐</div>
+          <div class="notif-body">
+            <div class="notif-title">New 5-Star Review!</div>
+            <div class="notif-sub">Received on Google Business</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TICKER ===== -->
+  <div class="ticker-wrap">
+    <div class="ticker-track">
+      <span>GHL Sub-Account Setup</span><span class="t-sep">◆</span>
+      <span>Sales Funnel Building</span><span class="t-sep">◆</span>
+      <span>CRM Automation</span><span class="t-sep">◆</span>
+      <span>Lead Generation</span><span class="t-sep">◆</span>
+      <span>Email &amp; SMS Campaigns</span><span class="t-sep">◆</span>
+      <span>White-Label GHL</span><span class="t-sep">◆</span>
+      <span>Reputation Management</span><span class="t-sep">◆</span>
+      <span>Workflow Automation</span><span class="t-sep">◆</span>
+      <span>GHL Sub-Account Setup</span><span class="t-sep">◆</span>
+      <span>Sales Funnel Building</span><span class="t-sep">◆</span>
+      <span>CRM Automation</span><span class="t-sep">◆</span>
+      <span>Lead Generation</span><span class="t-sep">◆</span>
+      <span>Email &amp; SMS Campaigns</span><span class="t-sep">◆</span>
+      <span>White-Label GHL</span><span class="t-sep">◆</span>
+      <span>Reputation Management</span><span class="t-sep">◆</span>
+      <span>Workflow Automation</span><span class="t-sep">◆</span>
+    </div>
+  </div>
+
+  <!-- ===== TOOL REPLACEMENT INFOGRAPHIC ===== -->
+  <section class="section tools-replace" id="tools">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag">Stop Paying for 10 Tools</span>
+        <h2 class="section-title">GoHighLevel Replaces<br />Your Entire Tool Stack</h2>
+        <p class="section-subtitle">Our clients save an average of <strong style="color:var(--accent)">$900+ per month</strong> by consolidating everything into GHL.</p>
+      </div>
+
+      <div class="tools-infographic fade-up">
+
+        <!-- BEFORE column -->
+        <div class="tools-before">
+          <div class="tools-col-header tools-col-header--bad">
+            <span class="col-icon">❌</span> Before GHL
+            <span class="col-total">$1,075+/mo</span>
+          </div>
+          <div class="tools-list">
+            <div class="tool-row">
+              <span class="tool-emoji">🚀</span>
+              <span class="tool-name">ClickFunnels</span>
+              <span class="tool-price">$297/mo</span>
+              <div class="tool-strike"></div>
+            </div>
+            <div class="tool-row">
+              <span class="tool-emoji">📧</span>
+              <span class="tool-name">ActiveCampaign</span>
+              <span class="tool-price">$149/mo</span>
+              <div class="tool-strike"></div>
+            </div>
+            <div class="tool-row">
+              <span class="tool-emoji">📅</span>
+              <span class="tool-name">Calendly Pro</span>
+              <span class="tool-price">$24/mo</span>
+              <div class="tool-strike"></div>
+            </div>
+            <div class="tool-row">
+              <span class="tool-emoji">💬</span>
+              <span class="tool-name">Twilio SMS</span>
+              <span class="tool-price">$99/mo</span>
+              <div class="tool-strike"></div>
+            </div>
+            <div class="tool-row">
+              <span class="tool-emoji">⚡</span>
+              <span class="tool-name">Zapier</span>
+              <span class="tool-price">$49/mo</span>
+              <div class="tool-strike"></div>
+            </div>
+            <div class="tool-row">
+              <span class="tool-emoji">🌐</span>
+              <span class="tool-name">WordPress + Hosting</span>
+              <span class="tool-price">$50/mo</span>
+              <div class="tool-strike"></div>
+            </div>
+            <div class="tool-row">
+              <span class="tool-emoji">📊</span>
+              <span class="tool-name">Keap CRM</span>
+              <span class="tool-price">$189/mo</span>
+              <div class="tool-strike"></div>
+            </div>
+            <div class="tool-row">
+              <span class="tool-emoji">⭐</span>
+              <span class="tool-name">Podium Reviews</span>
+              <span class="tool-price">$218/mo</span>
+              <div class="tool-strike"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CENTER arrow + savings -->
+        <div class="tools-center">
+          <div class="tools-arrow-wrap">
+            <svg class="tools-arrow" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="40" cy="40" r="38" stroke="rgba(0,212,255,0.2)" stroke-width="1.5" stroke-dasharray="4 4"/>
+              <path d="M18 40 H58 M46 26 L62 40 L46 54" stroke="#00D4FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <div class="savings-bubble">
+              <div class="savings-top">You Save</div>
+              <div class="savings-amount">$900<span>+</span></div>
+              <div class="savings-bottom">every month</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- AFTER column -->
+        <div class="tools-after">
+          <div class="tools-col-header tools-col-header--good">
+            <span class="col-icon">✅</span> After GHL
+            <span class="col-total col-total--good">From $97/mo</span>
+          </div>
+          <div class="ghl-platform-card">
+            <div class="ghl-logo-badge">GHL</div>
+            <div class="ghl-platform-name">GoHighLevel</div>
+            <div class="ghl-platform-sub">Complete Business Operating System</div>
+            <div class="ghl-features-grid">
+              <span><span class="gf-check">✓</span> Funnels</span>
+              <span><span class="gf-check">✓</span> CRM</span>
+              <span><span class="gf-check">✓</span> Email</span>
+              <span><span class="gf-check">✓</span> SMS</span>
+              <span><span class="gf-check">✓</span> Booking</span>
+              <span><span class="gf-check">✓</span> Automation</span>
+              <span><span class="gf-check">✓</span> Website</span>
+              <span><span class="gf-check">✓</span> Reviews</span>
+              <span><span class="gf-check">✓</span> Courses</span>
+              <span><span class="gf-check">✓</span> Analytics</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag">What We Do</span>
+        <h2 class="section-title">Complete GHL Services<br />Built to Grow Your Business</h2>
+        <p class="section-subtitle">Everything you need — designed, built, and launched inside GoHighLevel by a certified expert.</p>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card tilt-card fade-up">
+          <div class="card-glow"></div>
+          <div class="service-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <h3>GHL Sub-Account Setup</h3>
+          <ul class="service-list">
+            <li>Complete GHL account configuration from scratch</li>
+            <li>Custom domain &amp; branding setup</li>
+            <li>Integrations with your existing tools</li>
+            <li>Calendar, forms &amp; tracking setup</li>
+          </ul>
+        </div>
+
+        <div class="service-card tilt-card fade-up">
+          <div class="card-glow"></div>
+          <div class="service-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h18v18H3z"/><path d="M3 9h18M9 21V9"/></svg>
+          </div>
+          <h3>Sales Funnel &amp; Website Builder</h3>
+          <ul class="service-list">
+            <li>High-converting landing pages &amp; funnels</li>
+            <li>Full websites built inside GHL</li>
+            <li>A/B tested copy &amp; design</li>
+            <li>Mobile-optimized &amp; fast-loading</li>
+          </ul>
+        </div>
+
+        <div class="service-card tilt-card fade-up">
+          <div class="card-glow"></div>
+          <div class="service-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+          </div>
+          <h3>CRM Pipeline &amp; Automation</h3>
+          <ul class="service-list">
+            <li>Custom sales pipeline design</li>
+            <li>Automated workflows &amp; triggers</li>
+            <li>Lead scoring &amp; tagging systems</li>
+            <li>Appointment booking automation</li>
+          </ul>
+        </div>
+
+        <div class="service-card tilt-card fade-up">
+          <div class="card-glow"></div>
+          <div class="service-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <h3>Lead Generation System</h3>
+          <ul class="service-list">
+            <li>Facebook &amp; Google Ads integration</li>
+            <li>Automated lead capture funnels</li>
+            <li>Instant follow-up sequences</li>
+            <li>Lead nurturing &amp; re-engagement flows</li>
+          </ul>
+        </div>
+
+        <div class="service-card tilt-card fade-up">
+          <div class="card-glow"></div>
+          <div class="service-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <h3>Email &amp; SMS Marketing</h3>
+          <ul class="service-list">
+            <li>Automated email drip campaigns</li>
+            <li>SMS &amp; voicemail drop sequences</li>
+            <li>Broadcast campaigns &amp; newsletters</li>
+            <li>Reputation management &amp; review requests</li>
+          </ul>
+        </div>
+
+        <div class="service-card service-card--featured tilt-card fade-up">
+          <div class="featured-badge">Agency Special</div>
+          <div class="card-glow"></div>
+          <div class="service-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>White-Label GHL for Agencies</h3>
+          <ul class="service-list">
+            <li>Full white-label GHL agency setup</li>
+            <li>SaaS mode configuration &amp; pricing</li>
+            <li>Onboarding workflows for your clients</li>
+            <li>Resell GHL under your own brand</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY GHL ===== -->
+  <section class="section why-ghl" id="why-ghl">
+    <div class="container">
+      <div class="why-ghl-inner">
+        <div class="why-ghl-text fade-up">
+          <span class="section-tag">Why GoHighLevel</span>
+          <h2 class="section-title">The All-in-One Platform<br />Every Business Needs</h2>
+          <p class="section-subtitle">GoHighLevel replaces dozens of tools with one powerful platform — and as a certified GHL expert, I build it right the first time.</p>
+          <a href="#contact" class="btn btn-primary btn-glow">Get Your GHL System Built</a>
+        </div>
+        <div class="why-ghl-benefits fade-up">
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            </div>
+            <div>
+              <h4>All-in-One Platform</h4>
+              <p>CRM, funnels, email, SMS, calendar, website — everything in one place. No more tool chaos.</p>
+            </div>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="2"/></svg>
+            </div>
+            <div>
+              <h4>White-Label Ready</h4>
+              <p>Agency owners can resell GHL under their own brand and create a recurring SaaS revenue stream.</p>
+            </div>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <div>
+              <h4>Saves $1,000s in Tools</h4>
+              <p>Replace ClickFunnels, ActiveCampaign, Calendly, and 10+ other tools with one GHL subscription.</p>
+            </div>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+            </div>
+            <div>
+              <h4>Scales With Your Business</h4>
+              <p>From solo freelancer to full agency — GHL grows with you. Built once, used forever.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== RESULTS / STATS COUNTER ===== -->
+  <section class="section results" id="results">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag">Proven Results</span>
+        <h2 class="section-title">Numbers That Speak<br />for Themselves</h2>
+      </div>
+      <div class="results-grid">
+
+        <div class="result-item fade-up">
+          <div class="result-ring-wrap">
+            <svg class="result-ring" viewBox="0 0 100 100">
+              <circle class="ring-track" cx="50" cy="50" r="40"/>
+              <circle class="ring-fill" cx="50" cy="50" r="40" data-pct="85"/>
+            </svg>
+            <div class="result-center">
+              <div class="result-number count-up" data-target="50" data-suffix="+">0</div>
+            </div>
+          </div>
+          <div class="result-label">GHL Systems Built</div>
+          <div class="result-sub">For agencies &amp; small businesses</div>
+        </div>
+
+        <div class="result-item fade-up">
+          <div class="result-ring-wrap">
+            <svg class="result-ring" viewBox="0 0 100 100">
+              <circle class="ring-track" cx="50" cy="50" r="40"/>
+              <circle class="ring-fill" cx="50" cy="50" r="40" data-pct="92"/>
+            </svg>
+            <div class="result-center">
+              <div class="result-number count-up" data-target="900" data-prefix="$" data-suffix="+">0</div>
+            </div>
+          </div>
+          <div class="result-label">Monthly Savings / Client</div>
+          <div class="result-sub">After consolidating to GHL</div>
+        </div>
+
+        <div class="result-item fade-up">
+          <div class="result-ring-wrap">
+            <svg class="result-ring" viewBox="0 0 100 100">
+              <circle class="ring-track" cx="50" cy="50" r="40"/>
+              <circle class="ring-fill" cx="50" cy="50" r="40" data-pct="78"/>
+            </svg>
+            <div class="result-center">
+              <div class="result-number count-up" data-target="500" data-suffix="+">0</div>
+            </div>
+          </div>
+          <div class="result-label">Automations Created</div>
+          <div class="result-sub">Workflows running on autopilot</div>
+        </div>
+
+        <div class="result-item fade-up">
+          <div class="result-ring-wrap">
+            <svg class="result-ring" viewBox="0 0 100 100">
+              <circle class="ring-track" cx="50" cy="50" r="40"/>
+              <circle class="ring-fill" cx="50" cy="50" r="40" data-pct="100"/>
+            </svg>
+            <div class="result-center">
+              <div class="result-number count-up" data-target="100" data-suffix="%">0</div>
+            </div>
+          </div>
+          <div class="result-label">Client Satisfaction</div>
+          <div class="result-sub">5-star rated service every time</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOW IT WORKS ===== -->
+  <section class="section how-it-works" id="how-it-works">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag">Our Process</span>
+        <h2 class="section-title">From Zero to Fully Automated<br />in 3 Simple Steps</h2>
+      </div>
+      <div class="steps-grid">
+
+        <div class="step fade-up">
+          <div class="step-number">01</div>
+          <div class="step-icon-wrap">
+            <div class="step-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            <div class="step-ping"></div>
+          </div>
+          <h3>Strategy Call</h3>
+          <p>A deep-dive to understand your business, goals, current tools, and ideal customer — so we build exactly what you need.</p>
+          <div class="step-tag">Free &amp; No Obligation</div>
+        </div>
+
+        <div class="step-connector fade-up">
+          <svg class="connector-svg" viewBox="0 0 120 20" fill="none">
+            <path class="connector-path" d="M0 10 Q30 2 60 10 Q90 18 120 10" stroke="url(#grad1)" stroke-width="2" fill="none"/>
+            <defs>
+              <linearGradient id="grad1" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0%" stop-color="#00D4FF" stop-opacity="0.2"/>
+                <stop offset="50%" stop-color="#00D4FF" stop-opacity="1"/>
+                <stop offset="100%" stop-color="#00D4FF" stop-opacity="0.2"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+
+        <div class="step fade-up">
+          <div class="step-number">02</div>
+          <div class="step-icon-wrap">
+            <div class="step-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <div class="step-ping"></div>
+          </div>
+          <h3>Custom GHL Build</h3>
+          <p>I build your entire GHL system — funnels, automations, CRM pipelines, email &amp; SMS sequences — fully customized.</p>
+          <div class="step-tag">7–14 Day Delivery</div>
+        </div>
+
+        <div class="step-connector fade-up">
+          <svg class="connector-svg" viewBox="0 0 120 20" fill="none">
+            <path class="connector-path" d="M0 10 Q30 2 60 10 Q90 18 120 10" stroke="url(#grad2)" stroke-width="2" fill="none"/>
+            <defs>
+              <linearGradient id="grad2" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0%" stop-color="#00D4FF" stop-opacity="0.2"/>
+                <stop offset="50%" stop-color="#00D4FF" stop-opacity="1"/>
+                <stop offset="100%" stop-color="#00D4FF" stop-opacity="0.2"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+
+        <div class="step fade-up">
+          <div class="step-number">03</div>
+          <div class="step-icon-wrap">
+            <div class="step-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <div class="step-ping"></div>
+          </div>
+          <h3>Launch &amp; Scale</h3>
+          <p>Your system goes live. Leads flow in automatically, follow-ups run on autopilot, and you close more deals.</p>
+          <div class="step-tag">Ongoing Support</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRICING ===== -->
+  <section class="section pricing" id="pricing">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag">Pricing</span>
+        <h2 class="section-title">Simple, Transparent Pricing</h2>
+        <p class="section-subtitle">Choose the plan that fits your stage. Every plan is built on GoHighLevel.</p>
+      </div>
+      <div class="pricing-grid">
+
+        <div class="pricing-card fade-up">
+          <div class="plan-name">Starter</div>
+          <div class="plan-price">
+            <span class="price-label">Starting at</span>
+            <span class="price-amount">$497</span>
+            <span class="price-period">one-time</span>
+          </div>
+          <p class="plan-desc">Perfect for small businesses getting started with GHL.</p>
+          <ul class="plan-features">
+            <li><span class="check">✓</span> GHL sub-account setup &amp; configuration</li>
+            <li><span class="check">✓</span> CRM pipeline setup (up to 3 stages)</li>
+            <li><span class="check">✓</span> Basic automation workflow (1 flow)</li>
+            <li><span class="check">✓</span> Calendar &amp; booking integration</li>
+            <li><span class="check">✓</span> Custom domain &amp; branding</li>
+            <li><span class="check">✓</span> 1-week delivery</li>
+            <li class="muted"><span class="cross">✗</span> Funnels &amp; landing pages</li>
+            <li class="muted"><span class="cross">✗</span> Email &amp; SMS sequences</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline btn-block">Get Started</a>
+        </div>
+
+        <div class="pricing-card pricing-card--popular fade-up">
+          <div class="popular-badge">Most Popular</div>
+          <div class="plan-name">Growth</div>
+          <div class="plan-price">
+            <span class="price-label">Starting at</span>
+            <span class="price-amount">$997</span>
+            <span class="price-period">/ month</span>
+          </div>
+          <p class="plan-desc">Full GHL system with lead generation &amp; automation.</p>
+          <ul class="plan-features">
+            <li><span class="check">✓</span> Everything in Starter</li>
+            <li><span class="check">✓</span> 2 high-converting funnels / landing pages</li>
+            <li><span class="check">✓</span> Email &amp; SMS drip sequences</li>
+            <li><span class="check">✓</span> Lead generation (FB/Google Ads)</li>
+            <li><span class="check">✓</span> Advanced automation workflows</li>
+            <li><span class="check">✓</span> Reputation management setup</li>
+            <li><span class="check">✓</span> Monthly optimization &amp; support</li>
+            <li><span class="check">✓</span> Priority response time</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary btn-block btn-glow">Get Started</a>
+        </div>
+
+        <div class="pricing-card fade-up">
+          <div class="plan-name">Scale</div>
+          <div class="plan-price">
+            <span class="price-label">Custom</span>
+            <span class="price-amount">Enterprise</span>
+          </div>
+          <p class="plan-desc">Full white-label GHL agency system for agency owners.</p>
+          <ul class="plan-features">
+            <li><span class="check">✓</span> Everything in Growth</li>
+            <li><span class="check">✓</span> White-label GHL agency setup</li>
+            <li><span class="check">✓</span> SaaS mode &amp; pricing configuration</li>
+            <li><span class="check">✓</span> Client onboarding automation</li>
+            <li><span class="check">✓</span> Unlimited sub-accounts management</li>
+            <li><span class="check">✓</span> Custom reporting &amp; dashboards</li>
+            <li><span class="check">✓</span> Dedicated GHL account manager</li>
+            <li><span class="check">✓</span> Ongoing training &amp; support</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline btn-block">Contact Us</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="section testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag">Testimonials</span>
+        <h2 class="section-title">What Our Clients Say</h2>
+        <p class="section-subtitle">Real results from real business owners who trusted CRM Flow Lab.</p>
+      </div>
+      <div class="testimonials-grid">
+
+        <div class="testimonial-card fade-up">
+          <div class="quote-mark">"</div>
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">CRM Flow Lab completely transformed how we generate and follow up with leads. Our GHL system was set up in under a week and we booked 12 new clients in the first month alone.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">JM</div>
+            <div>
+              <div class="author-name">James Mitchell</div>
+              <div class="author-role">Digital Marketing Agency Owner, Texas</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card fade-up">
+          <div class="quote-mark">"</div>
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">I was spending $1,200/month on 8 different tools. CRM Flow Lab moved everything into GHL and automated my entire onboarding process. I saved money AND got better results.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">SR</div>
+            <div>
+              <div class="author-name">Sarah Rodriguez</div>
+              <div class="author-role">Real Estate Coach, Florida</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card fade-up">
+          <div class="quote-mark">"</div>
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">The white-label GHL setup they built for my agency is incredible. Now I'm reselling GHL to my own clients and earning an extra $3,000/month in recurring revenue. Best investment I've made.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">DK</div>
+            <div>
+              <div class="author-name">Daniel Kim</div>
+              <div class="author-role">Agency Owner &amp; GHL Reseller, California</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="contact-inner">
+        <div class="contact-text fade-up">
+          <span class="section-tag">Get In Touch</span>
+          <h2 class="section-title">Ready to Automate<br />Your Business?</h2>
+          <p class="section-subtitle">Fill out the form and we'll get back to you within 24 hours to schedule your free strategy call.</p>
+          <div class="contact-info">
+            <div class="contact-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>info@crmflowlab.com</span>
+            </div>
+            <div class="contact-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.62 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span>Available Mon–Fri, 9AM–6PM</span>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-wrap fade-up">
+          <form class="contact-form" id="contactForm" action="mailto:info@crmflowlab.com" method="post" enctype="text/plain">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" placeholder="John Smith" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" placeholder="john@example.com" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000" />
+              </div>
+              <div class="form-group">
+                <label for="business">Business Type *</label>
+                <select id="business" name="business" required>
+                  <option value="" disabled selected>Select your business type</option>
+                  <option value="agency">Marketing / Digital Agency</option>
+                  <option value="real-estate">Real Estate</option>
+                  <option value="coaching">Coaching / Consulting</option>
+                  <option value="ecommerce">E-Commerce</option>
+                  <option value="local">Local Business</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message">How can we help you? *</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell us about your business and what you're looking to automate..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block btn-lg btn-glow" id="submitBtn">
+              <span class="btn-text">Send Message &amp; Book Free Call</span>
+              <span class="btn-loading" style="display:none;">Sending...</span>
+            </button>
+            <div class="form-success" id="formSuccess" style="display:none;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              Message sent! We'll be in touch within 24 hours.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <span class="logo-crm">CRM</span><span class="logo-flow"> Flow</span><span class="logo-lab"> Lab</span>
+        </a>
+        <p class="footer-tagline">Automate. Generate. Scale.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Facebook">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">GHL Sub-Account Setup</a></li>
+            <li><a href="#services">Sales Funnel Builder</a></li>
+            <li><a href="#services">CRM &amp; Automation</a></li>
+            <li><a href="#services">Lead Generation</a></li>
+            <li><a href="#services">Email &amp; SMS Marketing</a></li>
+            <li><a href="#services">White-Label GHL</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#tools">Why GoHighLevel</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2026 CRM Flow Lab. All rights reserved. Built with GoHighLevel expertise.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
