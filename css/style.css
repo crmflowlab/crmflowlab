@@ -3,11 +3,11 @@
 
 :root {
   --bg:           #0A0F1E;
-  --bg-surface:   #111827;
-  --bg-card:      #0D1525;
-  --border:       #1E2A3A;
-  --accent:       #00D4FF;
-  --accent-hover: #00B8E0;
+  --bg-surface:   #0D1426;
+  --bg-card:      #111827;
+  --border:       #1A2340;
+  --accent:       #0066FF;
+  --accent-hover: #3385FF;
   --accent-glow:  rgba(0, 102, 255, 0.15);
   --accent-dim:   rgba(0, 102, 255, 0.08);
   --text:         #F9FAFB;
