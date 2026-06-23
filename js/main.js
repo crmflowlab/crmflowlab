@@ -104,7 +104,7 @@ type();
     particles.forEach(p => {
       ctx.beginPath();
       ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-      ctx.fillStyle = `rgba(0,212,255,${p.a})`;
+      ctx.fillStyle = `rgba(192,96,20,${p.a})`;
       ctx.fill();
       p.x += p.vx;
       p.y += p.vy;
@@ -150,8 +150,8 @@ function animateRing(ring) {
     const defs = document.createElementNS('http://www.w3.org/2000/svg', 'defs');
     defs.innerHTML = `
       <linearGradient id="ringGrad${svg.dataset.id || Math.random().toString(36).slice(2)}" x1="0" y1="1" x2="1" y2="0">
-        <stop offset="0%" stop-color="#0066FF"/>
-        <stop offset="100%" stop-color="#00D4FF"/>
+        <stop offset="0%" stop-color="#C06014"/>
+        <stop offset="100%" stop-color="#D9791F"/>
       </linearGradient>`;
     svg.appendChild(defs);
     const gradId = defs.querySelector('linearGradient').id;
