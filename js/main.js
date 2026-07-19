@@ -43,34 +43,36 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // ── Typewriter effect ────────────────────────────────────────────────
 const typedEl = document.getElementById('heroTyped');
-const phrases = [
-  'Your Entire Business',
-  'Lead Generation',
-  'Client Onboarding',
-  'Sales Follow-up',
-  'Reputation Management',
-];
-let phraseIdx = 0, charIdx = 0, deleting = false;
+if (typedEl) {
+  const phrases = [
+    'Your Entire Business',
+    'Lead Generation',
+    'Client Onboarding',
+    'Sales Follow-up',
+    'Reputation Management',
+  ];
+  let phraseIdx = 0, charIdx = 0, deleting = false;
 
-function type() {
-  const current = phrases[phraseIdx];
-  if (!deleting) {
-    typedEl.textContent = current.slice(0, ++charIdx);
-    if (charIdx === current.length) {
-      deleting = true;
-      setTimeout(type, 2200);
-      return;
+  function type() {
+    const current = phrases[phraseIdx];
+    if (!deleting) {
+      typedEl.textContent = current.slice(0, ++charIdx);
+      if (charIdx === current.length) {
+        deleting = true;
+        setTimeout(type, 2200);
+        return;
+      }
+    } else {
+      typedEl.textContent = current.slice(0, --charIdx);
+      if (charIdx === 0) {
+        deleting = false;
+        phraseIdx = (phraseIdx + 1) % phrases.length;
+      }
     }
-  } else {
-    typedEl.textContent = current.slice(0, --charIdx);
-    if (charIdx === 0) {
-      deleting = false;
-      phraseIdx = (phraseIdx + 1) % phrases.length;
-    }
+    setTimeout(type, deleting ? 45 : 80);
   }
-  setTimeout(type, deleting ? 45 : 80);
+  type();
 }
-type();
 
 // ── Particle canvas ──────────────────────────────────────────────────
 (function initParticles() {
