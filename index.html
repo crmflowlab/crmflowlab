@@ -21,11 +21,13 @@
       gap: 24px;
       margin-bottom: 28px;
     }
-    .proof-grid-images {
+    .proof-grid-images,
+    .proof-images {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 24px;
       margin-bottom: 48px;
+      align-items: start;
     }
     .proof-card {
       background: var(--bg-card, #FFFFFF);
@@ -52,8 +54,7 @@
     }
     .proof-card img {
       width: 100%;
-      height: 230px;
-      object-fit: cover;
+      height: auto;
       display: block;
       border-bottom: 1px solid var(--border, #CDCDCD);
     }
@@ -95,13 +96,15 @@
       .proof-grid-videos {
         grid-template-columns: repeat(2, 1fr);
       }
-      .proof-grid-images {
+      .proof-grid-images,
+      .proof-images {
         grid-template-columns: repeat(2, 1fr);
       }
     }
     @media (max-width: 768px) {
       .proof-grid-videos,
-      .proof-grid-images {
+      .proof-grid-images,
+      .proof-images {
         grid-template-columns: 1fr;
       }
       .proof-cta-text {
@@ -792,7 +795,7 @@
       <!-- 3-Column Video Grid -->
       <div class="proof-grid-videos">
         <figure class="proof-card fade-up">
-          <video controls preload="none" playsinline poster="images/proof/video-notification-engine-poster.jpg">
+          <video autoplay muted loop playsinline preload="metadata" controls poster="images/proof/video-notification-engine-poster.jpg">
             <source src="images/proof/video-notification-engine.mp4" type="video/mp4">
           </video>
           <figcaption>
@@ -802,7 +805,7 @@
         </figure>
 
         <figure class="proof-card fade-up">
-          <video controls preload="none" playsinline poster="images/proof/video-review-automations-poster.jpg">
+          <video autoplay muted loop playsinline preload="metadata" controls poster="images/proof/video-review-automations-poster.jpg">
             <source src="images/proof/video-review-automations.mp4" type="video/mp4">
           </video>
           <figcaption>
@@ -812,7 +815,7 @@
         </figure>
 
         <figure class="proof-card fade-up">
-          <video controls preload="none" playsinline poster="images/proof/video-new-lead-intake-poster.jpg">
+          <video autoplay muted loop playsinline preload="metadata" controls poster="images/proof/video-new-lead-intake-poster.jpg">
             <source src="images/proof/video-new-lead-intake.mp4" type="video/mp4">
           </video>
           <figcaption>
@@ -823,7 +826,7 @@
       </div>
 
       <!-- 4-Column Image Grid -->
-      <div class="proof-grid-images">
+      <div class="proof-grid-images proof-images">
         <figure class="proof-card fade-up">
           <img src="images/proof/portfolio-1-tennis-academy.jpg" alt="Full website + membership funnel" loading="lazy">
           <figcaption>
