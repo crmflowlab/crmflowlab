@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -9,6 +9,106 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* ===== PROOF OF WORK STYLES ===== */
+    .proof {
+      background: var(--bg, #FFFFFF);
+      border-top: 1px solid var(--border, #CDCDCD);
+    }
+    .proof-grid-videos {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-bottom: 28px;
+    }
+    .proof-grid-images {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      margin-bottom: 48px;
+    }
+    .proof-card {
+      background: var(--bg-card, #FFFFFF);
+      border: 1px solid var(--border, #CDCDCD);
+      border-radius: var(--radius-card, 14px);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      transition: transform var(--transition, 0.25s ease), border-color var(--transition, 0.25s ease), box-shadow var(--transition, 0.25s ease);
+    }
+    .proof-card:hover {
+      transform: translateY(-6px);
+      border-color: var(--accent, #C06014);
+      box-shadow: 0 10px 30px rgba(192, 96, 20, 0.15);
+    }
+    .proof-card video {
+      width: 100%;
+      aspect-ratio: 16 / 7;
+      object-fit: cover;
+      background: #000000;
+      display: block;
+      border-bottom: 1px solid var(--border, #CDCDCD);
+    }
+    .proof-card img {
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
+      display: block;
+      border-bottom: 1px solid var(--border, #CDCDCD);
+    }
+    .proof-card figcaption {
+      padding: 20px 22px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      flex-grow: 1;
+    }
+    .proof-card h4 {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--text, #000000);
+      line-height: 1.35;
+      margin: 0;
+    }
+    .proof-card p {
+      font-size: 14px;
+      color: var(--text-muted, #6B6B6B);
+      line-height: 1.5;
+      margin: 0;
+    }
+    .proof-cta {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      padding-top: 8px;
+    }
+    .proof-cta-text {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--text, #000000);
+      margin: 0;
+    }
+    @media (max-width: 1024px) {
+      .proof-grid-videos {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .proof-grid-images {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 768px) {
+      .proof-grid-videos,
+      .proof-grid-images {
+        grid-template-columns: 1fr;
+      }
+      .proof-cta-text {
+        font-size: 18px;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -72,12 +172,12 @@
         </div>
         <div class="hero-stats fade-up">
           <div class="stat">
-            <span class="stat-number count-up" data-target="50" data-suffix="+">0+</span>
+            <span class="stat-number count-up" data-target="50" data-suffix="+">50+</span>
             <span class="stat-label">GHL Systems Built</span>
           </div>
           <div class="stat-divider"></div>
           <div class="stat">
-            <span class="stat-number count-up" data-target="100" data-suffix="%">0%</span>
+            <span class="stat-number count-up" data-target="100" data-suffix="%">100%</span>
             <span class="stat-label">Client Satisfaction</span>
           </div>
           <div class="stat-divider"></div>
@@ -472,7 +572,7 @@
               <circle class="ring-fill" cx="50" cy="50" r="40" data-pct="85"/>
             </svg>
             <div class="result-center">
-              <div class="result-number count-up" data-target="50" data-suffix="+">0</div>
+              <div class="result-number count-up" data-target="50" data-suffix="+">50+</div>
             </div>
           </div>
           <div class="result-label">GHL Systems Built</div>
@@ -486,7 +586,7 @@
               <circle class="ring-fill" cx="50" cy="50" r="40" data-pct="92"/>
             </svg>
             <div class="result-center">
-              <div class="result-number count-up" data-target="900" data-prefix="$" data-suffix="+">0</div>
+              <div class="result-number count-up" data-target="900" data-prefix="$" data-suffix="+">$900+</div>
             </div>
           </div>
           <div class="result-label">Monthly Savings / Client</div>
@@ -500,7 +600,7 @@
               <circle class="ring-fill" cx="50" cy="50" r="40" data-pct="78"/>
             </svg>
             <div class="result-center">
-              <div class="result-number count-up" data-target="500" data-suffix="+">0</div>
+              <div class="result-number count-up" data-target="500" data-suffix="+">500+</div>
             </div>
           </div>
           <div class="result-label">Automations Created</div>
@@ -514,7 +614,7 @@
               <circle class="ring-fill" cx="50" cy="50" r="40" data-pct="100"/>
             </svg>
             <div class="result-center">
-              <div class="result-number count-up" data-target="100" data-suffix="%">0</div>
+              <div class="result-number count-up" data-target="100" data-suffix="%">100%</div>
             </div>
           </div>
           <div class="result-label">Client Satisfaction</div>
@@ -680,55 +780,87 @@
     </div>
   </section>
 
-  <!-- ===== TESTIMONIALS ===== -->
-  <section class="section testimonials" id="testimonials">
+  <!-- ===== PROOF OF WORK ===== -->
+  <section class="section proof" id="proof">
     <div class="container">
       <div class="section-header fade-up">
-        <span class="section-tag">Testimonials</span>
-        <h2 class="section-title">What Our Clients Say</h2>
-        <p class="section-subtitle">Real results from real business owners who trusted CRM Flow Lab.</p>
+        <span class="section-tag">Proof of Work</span>
+        <h2 class="section-title">Real Systems. Built for Paying Clients.</h2>
+        <p class="section-subtitle">CRM Flow Lab is new — the experience behind it isn't. Here's a look inside actual GoHighLevel systems I've built and run for paying clients. Client names hidden for privacy.</p>
       </div>
-      <div class="testimonials-grid">
 
-        <div class="testimonial-card fade-up">
-          <div class="quote-mark">"</div>
-          <div class="stars">★★★★★</div>
-          <p class="testimonial-text">CRM Flow Lab completely transformed how we generate and follow up with leads. Our GHL system was set up in under a week and we booked 12 new clients in the first month alone.</p>
-          <div class="testimonial-author">
-            <div class="author-avatar"><img src="images/testimonials/james-mitchell.webp" alt="James Mitchell" style="object-position: center 12%;" onerror="this.parentElement.textContent='JM';"></div>
-            <div>
-              <div class="author-name">James Mitchell</div>
-              <div class="author-role">Digital Marketing Agency Owner, Texas</div>
-            </div>
-          </div>
-        </div>
+      <!-- 3-Column Video Grid -->
+      <div class="proof-grid-videos">
+        <figure class="proof-card fade-up">
+          <video controls preload="none" playsinline poster="images/proof/video-notification-engine-poster.jpg">
+            <source src="images/proof/video-notification-engine.mp4" type="video/mp4">
+          </video>
+          <figcaption>
+            <h4>Automated booking reminders</h4>
+            <p>48-hour, 24-hour and day-of reminders across email + SMS — the no-show killer every clinic needs.</p>
+          </figcaption>
+        </figure>
 
-        <div class="testimonial-card fade-up">
-          <div class="quote-mark">"</div>
-          <div class="stars">★★★★★</div>
-          <p class="testimonial-text">I was spending $1,200/month on 8 different tools. CRM Flow Lab moved everything into GHL and automated my entire onboarding process. I saved money AND got better results.</p>
-          <div class="testimonial-author">
-            <div class="author-avatar"><img src="images/testimonials/sarah-rodriguez.jpg" alt="Sarah Rodriguez" onerror="this.parentElement.textContent='SR';"></div>
-            <div>
-              <div class="author-name">Sarah Rodriguez</div>
-              <div class="author-role">Real Estate Coach, Florida</div>
-            </div>
-          </div>
-        </div>
+        <figure class="proof-card fade-up">
+          <video controls preload="none" playsinline poster="images/proof/video-review-automations-poster.jpg">
+            <source src="images/proof/video-review-automations.mp4" type="video/mp4">
+          </video>
+          <figcaption>
+            <h4>Review-request automation</h4>
+            <p>Every survey response routed to the right follow-up — happy patients asked for reviews, unhappy ones recovered.</p>
+          </figcaption>
+        </figure>
 
-        <div class="testimonial-card fade-up">
-          <div class="quote-mark">"</div>
-          <div class="stars">★★★★★</div>
-          <p class="testimonial-text">The white-label GHL setup they built for my agency is incredible. Now I'm reselling GHL to my own clients and earning an extra $3,000/month in recurring revenue. Best investment I've made.</p>
-          <div class="testimonial-author">
-            <div class="author-avatar"><img src="images/testimonials/daniel-kim.jpg" alt="Daniel Kim" onerror="this.parentElement.textContent='DK';"></div>
-            <div>
-              <div class="author-name">Daniel Kim</div>
-              <div class="author-role">Agency Owner &amp; GHL Reseller, California</div>
-            </div>
-          </div>
-        </div>
+        <figure class="proof-card fade-up">
+          <video controls preload="none" playsinline poster="images/proof/video-new-lead-intake-poster.jpg">
+            <source src="images/proof/video-new-lead-intake.mp4" type="video/mp4">
+          </video>
+          <figcaption>
+            <h4>After-hours lead intake</h4>
+            <p>New inquiries tagged, assigned and routed automatically — even at midnight, even on weekends.</p>
+          </figcaption>
+        </figure>
+      </div>
 
+      <!-- 4-Column Image Grid -->
+      <div class="proof-grid-images">
+        <figure class="proof-card fade-up">
+          <img src="images/proof/portfolio-1-tennis-academy.jpg" alt="Full website + membership funnel" loading="lazy">
+          <figcaption>
+            <h4>Full website + membership funnel</h4>
+            <p>Plans, checkout flow and onboarding pages for a paying client.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="proof-card fade-up">
+          <img src="images/proof/portfolio-2a-summit-hero.jpg" alt="Event registration funnel" loading="lazy">
+          <figcaption>
+            <h4>Event registration funnel</h4>
+            <p>Speakers, schedule and registration flow — built to convert.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="proof-card fade-up">
+          <img src="images/proof/portfolio-4a-eco-services.jpg" alt="Service landing page" loading="lazy">
+          <figcaption>
+            <h4>Service landing page</h4>
+            <p>Quote-focused page with service sections for a local business.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="proof-card fade-up">
+          <img src="images/proof/portfolio-5a-trust-center.png" alt="SMS deliverability, done right" loading="lazy">
+          <figcaption>
+            <h4>SMS deliverability, done right</h4>
+            <p>A2P messaging + SHAKEN/STIR approved — so reminders actually get delivered.</p>
+          </figcaption>
+        </figure>
+      </div>
+
+      <!-- Centered CTA -->
+      <div class="proof-cta fade-up">
+        <p class="proof-cta-text">Want this running for your clinic?</p>
+        <a href="#contact" class="btn btn-primary btn-glow">Get a free 15-min follow-up audit</a>
       </div>
     </div>
   </section>
@@ -771,6 +903,8 @@
   title="Contact Form">
 </iframe>
 <script src="https://link.msgsndr.com/js/form_embed.js"></script>
+        </div>
+      </div>
     </div>
   </section>
   <!-- ===== FOOTER ===== -->
@@ -808,7 +942,7 @@
             <li><a href="#tools">Why GoHighLevel</a></li>
             <li><a href="#how-it-works">How It Works</a></li>
             <li><a href="#pricing">Pricing</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#proof">Proof of Work</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
