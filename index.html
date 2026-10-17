@@ -3,116 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="CRM Flow Lab — GoHighLevel expert agency for agency owners and small businesses. We build your entire GHL system: funnels, automations, CRM pipelines, and lead generation." />
-  <title>CRM Flow Lab | GoHighLevel Expert Agency</title>
+  <meta name="description" content="CRM Flow Lab builds complete GoHighLevel systems for dental clinics and med spas — instant lead follow-up, no-show reminders, review generation, and patient reactivation." />
+  <title>CRM Flow Lab | GoHighLevel Systems for Dental Clinics & Med Spas</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
-  <style>
-    /* ===== PROOF OF WORK STYLES ===== */
-    .proof {
-      background: var(--bg, #FFFFFF);
-      border-top: 1px solid var(--border, #CDCDCD);
-    }
-    .proof-grid-videos {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
-      margin-bottom: 28px;
-    }
-    .proof-grid-images,
-    .proof-images {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 24px;
-      margin-bottom: 48px;
-    }
-    .proof-card {
-      background: var(--bg-card, #FFFFFF);
-      border: 1px solid var(--border, #CDCDCD);
-      border-radius: var(--radius-card, 14px);
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      margin: 0;
-      transition: transform var(--transition, 0.25s ease), border-color var(--transition, 0.25s ease), box-shadow var(--transition, 0.25s ease);
-    }
-    .proof-card:hover {
-      transform: translateY(-6px);
-      border-color: var(--accent, #C06014);
-      box-shadow: 0 10px 30px rgba(192, 96, 20, 0.15);
-    }
-    .proof-card video {
-      width: 100%;
-      aspect-ratio: 16 / 7;
-      object-fit: cover;
-      background: #000000;
-      display: block;
-      border-bottom: 1px solid var(--border, #CDCDCD);
-    }
-    .proof-card img {
-      width: 100%;
-      height: 230px;
-      object-fit: cover;
-      object-position: top;
-      display: block;
-      border-bottom: 1px solid var(--border, #CDCDCD);
-    }
-    .proof-card figcaption {
-      padding: 20px 22px 24px;
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-      flex-grow: 1;
-    }
-    .proof-card h4 {
-      font-size: 17px;
-      font-weight: 700;
-      color: var(--text, #000000);
-      line-height: 1.35;
-      margin: 0;
-    }
-    .proof-card p {
-      font-size: 14px;
-      color: var(--text-muted, #6B6B6B);
-      line-height: 1.5;
-      margin: 0;
-    }
-    .proof-cta {
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 16px;
-      padding-top: 8px;
-    }
-    .proof-cta-text {
-      font-size: 20px;
-      font-weight: 700;
-      color: var(--text, #000000);
-      margin: 0;
-    }
-    @media (max-width: 1024px) {
-      .proof-grid-videos {
-        grid-template-columns: repeat(2, 1fr);
-      }
-      .proof-grid-images,
-      .proof-images {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-    @media (max-width: 768px) {
-      .proof-grid-videos,
-      .proof-grid-images,
-      .proof-images {
-        grid-template-columns: 1fr;
-      }
-      .proof-cta-text {
-        font-size: 18px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="css/additions.css" />
 </head>
 <body>
 
@@ -122,16 +19,18 @@
   <!-- ===== NAVBAR ===== -->
   <nav class="navbar" id="navbar">
     <div class="container nav-inner">
-      <a href="#" class="logo">
+      <a href="index.html" class="logo">
         <span class="logo-crm">CRM</span><span class="logo-flow"> Flow</span><span class="logo-lab"> Lab</span>
       </a>
       <ul class="nav-links" id="navLinks">
-        <li><a href="#services"     class="nav-link">Services</a></li>
-        <li><a href="#tools"        class="nav-link">Why GHL</a></li>
-        <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
-        <li><a href="#pricing"      class="nav-link">Pricing</a></li>
-        <li><a href="#contact"      class="nav-link">Contact</a></li>
-        <li><a href="#contact" class="btn btn-primary nav-cta">Book a Free Call</a></li>
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="dental.html" class="nav-link">Dental Clinics</a></li>
+        <li><a href="medspa.html" class="nav-link">Med Spas</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="results.html" class="nav-link">Results</a></li>
+        <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="contact.html" class="btn btn-primary nav-cta">Book a Free Call</a></li>
       </ul>
       <button class="hamburger" id="hamburger" aria-label="Toggle menu">
         <span></span><span></span><span></span>
@@ -153,28 +52,30 @@
 
       <!-- LEFT: Text -->
       <div class="hero-content">
-        <div class="hero-badge fade-up">
+        <div class="hero-badge rise rise-1">
           <span class="badge-dot"></span>
-          GoHighLevel Certified Expert
+          GoHighLevel Experts &middot; Dental Clinics &amp; Med Spas
         </div>
-        <h1 class="hero-title fade-up">
-          Stop Losing Leads. Start Closing More Clients With <span class="highlight">GoHighLevel Automation</span>.
+        <h1 class="hero-title rise rise-2">
+          More booked appointments.<br />Zero missed <span class="highlight">follow-ups</span>.
         </h1>
-        <p class="hero-subtitle fade-up">
-          We build your entire GHL system — funnels, automations, CRM pipelines,
-          and lead generation — so you can focus on closing deals, not tech.
+        <p class="hero-subtitle rise rise-3">
+          We&rsquo;re CRM Flow Lab. We build your complete GoHighLevel system &mdash;
+          instant lead follow-up, no-show reminders, review generation, and patient
+          reactivation &mdash; so your chairs stay full while your front desk
+          finally gets to breathe.
         </p>
-        <div class="hero-actions fade-up">
-          <a href="#contact" class="btn btn-primary btn-lg btn-glow">
+        <div class="hero-actions rise rise-4">
+          <a href="contact.html" class="btn btn-primary btn-lg btn-glow">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
             Book a Free Call
           </a>
-          <a href="#services" class="btn btn-ghost btn-lg">
-            See Our Services
+          <a href="services.html" class="btn btn-ghost btn-lg">
+            See What We Build
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
           </a>
         </div>
-        <div class="hero-stats fade-up">
+        <div class="hero-stats rise rise-5">
           <div class="stat">
             <span class="stat-number count-up" data-target="50" data-suffix="+">50+</span>
             <span class="stat-label">GHL Systems Built</span>
@@ -193,7 +94,7 @@
       </div>
 
       <!-- RIGHT: Dashboard visual -->
-      <div class="hero-visual fade-up">
+      <div class="hero-visual rise rise-3">
 
         <!-- Main CRM dashboard card -->
         <div class="db-card">
@@ -203,13 +104,13 @@
               <span class="db-dot" style="background:#FEBC2E"></span>
               <span class="db-dot" style="background:#28C840"></span>
             </div>
-            <span class="db-title">CRM Pipeline — Live</span>
+            <span class="db-title">Patient Pipeline &mdash; Live</span>
             <span class="db-live"><span class="live-pulse"></span>LIVE</span>
           </div>
 
           <div class="pipeline-stages">
             <div class="p-col">
-              <div class="p-label">New Leads</div>
+              <div class="p-label">New Inquiries</div>
               <div class="p-num">24</div>
               <div class="p-bar"><div class="p-fill" style="--w:80%"></div></div>
             </div>
@@ -219,12 +120,12 @@
               <div class="p-bar"><div class="p-fill" style="--w:60%"></div></div>
             </div>
             <div class="p-col">
-              <div class="p-label">Proposal</div>
+              <div class="p-label">Consult Booked</div>
               <div class="p-num">11</div>
               <div class="p-bar"><div class="p-fill" style="--w:38%"></div></div>
             </div>
             <div class="p-col">
-              <div class="p-label">Closed ✓</div>
+              <div class="p-label">Showed Up &#10003;</div>
               <div class="p-num green">8</div>
               <div class="p-bar"><div class="p-fill p-fill-green" style="--w:26%"></div></div>
             </div>
@@ -240,33 +141,33 @@
               <div class="chart-bar chart-bar--active" style="--h:95%"><span>S</span></div>
               <div class="chart-bar" style="--h:55%"><span>S</span></div>
             </div>
-            <div class="chart-label">Weekly Lead Activity ↑ 47%</div>
+            <div class="chart-label">Weekly Bookings &uarr; 47%</div>
           </div>
         </div>
 
         <!-- Floating notification cards -->
         <div class="notif notif-1">
-          <div class="notif-icon-wrap">🎯</div>
+          <div class="notif-icon-wrap">&#127919;</div>
           <div class="notif-body">
-            <div class="notif-title">New Lead Captured!</div>
-            <div class="notif-sub">Sarah M. submitted your funnel</div>
+            <div class="notif-title">New Patient Captured!</div>
+            <div class="notif-sub">Invisalign inquiry &mdash; replied in 38 seconds</div>
           </div>
           <div class="notif-time">just now</div>
         </div>
 
         <div class="notif notif-2">
-          <div class="notif-icon-wrap">⚡</div>
+          <div class="notif-icon-wrap">&#9889;</div>
           <div class="notif-body">
-            <div class="notif-title">Automation Triggered</div>
-            <div class="notif-sub">Welcome SMS sequence sent</div>
+            <div class="notif-title">Reminder Sent</div>
+            <div class="notif-sub">Tomorrow&rsquo;s hygiene visits confirmed by SMS</div>
           </div>
         </div>
 
         <div class="notif notif-3">
-          <div class="notif-icon-wrap">⭐</div>
+          <div class="notif-icon-wrap">&#11088;</div>
           <div class="notif-body">
             <div class="notif-title">New 5-Star Review!</div>
-            <div class="notif-sub">Received on Google Business</div>
+            <div class="notif-sub">Posted on Google 2 minutes after checkout</div>
           </div>
         </div>
 
@@ -277,32 +178,166 @@
   <!-- ===== TICKER ===== -->
   <div class="ticker-wrap">
     <div class="ticker-track">
-      <span>GHL Sub-Account Setup</span><span class="t-sep">◆</span>
-      <span>Sales Funnel Building</span><span class="t-sep">◆</span>
-      <span>CRM Automation</span><span class="t-sep">◆</span>
-      <span>Lead Generation</span><span class="t-sep">◆</span>
-      <span>Email &amp; SMS Campaigns</span><span class="t-sep">◆</span>
-      <span>White-Label GHL</span><span class="t-sep">◆</span>
-      <span>Reputation Management</span><span class="t-sep">◆</span>
-      <span>Workflow Automation</span><span class="t-sep">◆</span>
-      <span>GHL Sub-Account Setup</span><span class="t-sep">◆</span>
-      <span>Sales Funnel Building</span><span class="t-sep">◆</span>
-      <span>CRM Automation</span><span class="t-sep">◆</span>
-      <span>Lead Generation</span><span class="t-sep">◆</span>
-      <span>Email &amp; SMS Campaigns</span><span class="t-sep">◆</span>
-      <span>White-Label GHL</span><span class="t-sep">◆</span>
-      <span>Reputation Management</span><span class="t-sep">◆</span>
-      <span>Workflow Automation</span><span class="t-sep">◆</span>
+      <span>Patient Booking Funnels</span><span class="t-sep">&#9670;</span>
+      <span>No-Show Reminders</span><span class="t-sep">&#9670;</span>
+      <span>Instant Lead Response</span><span class="t-sep">&#9670;</span>
+      <span>Review Generation</span><span class="t-sep">&#9670;</span>
+      <span>Recall Automation</span><span class="t-sep">&#9670;</span>
+      <span>Reactivation Campaigns</span><span class="t-sep">&#9670;</span>
+      <span>Treatment Follow-Up</span><span class="t-sep">&#9670;</span>
+      <span>Online Scheduling</span><span class="t-sep">&#9670;</span>
+      <span>Patient Booking Funnels</span><span class="t-sep">&#9670;</span>
+      <span>No-Show Reminders</span><span class="t-sep">&#9670;</span>
+      <span>Instant Lead Response</span><span class="t-sep">&#9670;</span>
+      <span>Review Generation</span><span class="t-sep">&#9670;</span>
+      <span>Recall Automation</span><span class="t-sep">&#9670;</span>
+      <span>Reactivation Campaigns</span><span class="t-sep">&#9670;</span>
+      <span>Treatment Follow-Up</span><span class="t-sep">&#9670;</span>
+      <span>Online Scheduling</span><span class="t-sep">&#9670;</span>
     </div>
   </div>
+
+  <!-- ===== WHO WE HELP ===== -->
+  <section class="section" id="who-we-help">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag">Who We Help</span>
+        <h2 class="section-title">Built for practices that<br />live on appointments</h2>
+        <p class="section-subtitle">We don&rsquo;t do &ldquo;every business.&rdquo; We do two kinds of practices &mdash; and we know their workflows cold.</p>
+      </div>
+      <div class="niche-grid" data-stagger>
+        <a href="dental.html" class="niche-card spotlight">
+          <div class="niche-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5.5c-1.5-1.8-3.5-2.5-5.5-2C4 4 3 6.5 3.5 9c.3 1.6 1 2.6 1.3 4.2.3 1.5.4 3.1.7 4.6.2 1.2.6 2.7 2 2.7 1.7 0 1.4-2.6 1.7-4 .2-1 .6-2.4 1.8-2.4h2c1.2 0 1.6 1.4 1.8 2.4.3 1.4 0 4 1.7 4 1.4 0 1.8-1.5 2-2.7.3-1.5.4-3.1.7-4.6.3-1.6 1-2.6 1.3-4.2.5-2.5-.5-5-3-5.5-2-.5-4 .7-5.5 2.5z"/></svg>
+          </div>
+          <h3>For Dental Clinics</h3>
+          <p>Implant and Invisalign inquiries answered in under a minute. Hygiene recalls that fill themselves. No-shows cut down with reminders patients actually read.</p>
+          <span class="niche-link">How we help dentists
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </span>
+        </a>
+        <a href="medspa.html" class="niche-card spotlight">
+          <div class="niche-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/><path d="M19 15l.9 2.1L22 18l-2.1.9L19 21l-.9-2.1L16 18l2.1-.9z"/></svg>
+          </div>
+          <h3>For Med Spas</h3>
+          <p>Botox and laser inquiries followed up before they book elsewhere. Consult reminders, membership renewals, and review requests &mdash; all on autopilot.</p>
+          <span class="niche-link">How we help med spas
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES OVERVIEW ===== -->
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag">What We Do</span>
+        <h2 class="section-title">Everything a practice needs,<br />built inside GoHighLevel</h2>
+        <p class="section-subtitle">Designed, built, and launched for you. You don&rsquo;t touch a single setting unless you want to.</p>
+      </div>
+      <div class="services-grid" data-stagger>
+
+        <div class="service-card tilt-card spotlight">
+          <div class="card-glow"></div>
+          <div class="service-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <h3>Patient Booking Funnels</h3>
+          <ul class="service-list">
+            <li>Treatment-specific pages for implants, Invisalign, Botox, laser</li>
+            <li>Online booking built right in &mdash; no plugins</li>
+            <li>Copy written the way patients actually talk</li>
+            <li>Fast, mobile-first, ready to run ads to</li>
+          </ul>
+        </div>
+
+        <div class="service-card tilt-card spotlight">
+          <div class="card-glow"></div>
+          <div class="service-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          </div>
+          <h3>Instant Lead Response</h3>
+          <ul class="service-list">
+            <li>Every inquiry gets a text + email in under 60 seconds</li>
+            <li>Works at midnight, weekends, holidays</li>
+            <li>Smart routing to the right staff member</li>
+            <li>First to respond usually wins the patient</li>
+          </ul>
+        </div>
+
+        <div class="service-card tilt-card spotlight">
+          <div class="card-glow"></div>
+          <div class="service-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          </div>
+          <h3>No-Show Defense</h3>
+          <ul class="service-list">
+            <li>48-hour, 24-hour &amp; day-of reminders via SMS + email</li>
+            <li>One-tap confirm, cancel &amp; reschedule links</li>
+            <li>Waitlist backfill when someone cancels</li>
+            <li>Fewer empty chairs, fuller days</li>
+          </ul>
+        </div>
+
+        <div class="service-card tilt-card spotlight">
+          <div class="card-glow"></div>
+          <div class="service-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <h3>Review Generation</h3>
+          <ul class="service-list">
+            <li>Review requests sent at the perfect moment</li>
+            <li>Happy patients go to Google; unhappy ones come to you first</li>
+            <li>Your rating climbs without lifting a finger</li>
+            <li>Reputation dashboard you can actually read</li>
+          </ul>
+        </div>
+
+        <div class="service-card tilt-card spotlight">
+          <div class="card-glow"></div>
+          <div class="service-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 6l-9.5 9.5-5-5L1 18"/><path d="M17 6h6v6"/></svg>
+          </div>
+          <h3>Recall &amp; Reactivation</h3>
+          <ul class="service-list">
+            <li>Hygiene recalls that book themselves</li>
+            <li>Treatment-plan follow-ups that close pending cases</li>
+            <li>Win-back campaigns for dormant patients</li>
+            <li>Your patient list is revenue sitting still</li>
+          </ul>
+        </div>
+
+        <div class="service-card tilt-card spotlight">
+          <div class="card-glow"></div>
+          <div class="service-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+          </div>
+          <h3>Complete GHL Setup</h3>
+          <ul class="service-list">
+            <li>Sub-account configured from scratch, branded as you</li>
+            <li>Calendars, pipelines, forms &amp; integrations</li>
+            <li>Your tools connected &mdash; no data lost</li>
+            <li>Live in 7&ndash;14 days, with training included</li>
+          </ul>
+        </div>
+
+      </div>
+      <div style="text-align:center; margin-top:36px;" class="fade-up">
+        <a href="services.html" class="btn btn-outline btn-lg">See every service in detail</a>
+      </div>
+    </div>
+  </section>
 
   <!-- ===== TOOL REPLACEMENT INFOGRAPHIC ===== -->
   <section class="section tools-replace" id="tools">
     <div class="container">
       <div class="section-header fade-up">
-        <span class="section-tag">Stop Paying for 10 Tools</span>
+        <span class="section-tag">One Login Instead of Ten</span>
         <h2 class="section-title">GoHighLevel Replaces<br />Your Entire Tool Stack</h2>
-        <p class="section-subtitle">Our clients save an average of <strong style="color:var(--accent)">$900+ per month</strong> by consolidating everything into GHL.</p>
+        <p class="section-subtitle">Practices we work with save an average of <strong style="color:var(--accent)">$900+ per month</strong> by consolidating everything into GHL.</p>
       </div>
 
       <div class="tools-infographic fade-up">
@@ -310,54 +345,54 @@
         <!-- BEFORE column -->
         <div class="tools-before">
           <div class="tools-col-header tools-col-header--bad">
-            <span class="col-icon">❌</span> Before GHL
+            <span class="col-icon">&#10060;</span> Before GHL
             <span class="col-total">$1,075+/mo</span>
           </div>
           <div class="tools-list">
             <div class="tool-row">
-              <span class="tool-emoji">🚀</span>
+              <span class="tool-emoji">&#128640;</span>
               <span class="tool-name">ClickFunnels</span>
               <span class="tool-price">$297/mo</span>
               <div class="tool-strike"></div>
             </div>
             <div class="tool-row">
-              <span class="tool-emoji">📧</span>
+              <span class="tool-emoji">&#128231;</span>
               <span class="tool-name">ActiveCampaign</span>
               <span class="tool-price">$149/mo</span>
               <div class="tool-strike"></div>
             </div>
             <div class="tool-row">
-              <span class="tool-emoji">📅</span>
+              <span class="tool-emoji">&#128197;</span>
               <span class="tool-name">Calendly Pro</span>
               <span class="tool-price">$24/mo</span>
               <div class="tool-strike"></div>
             </div>
             <div class="tool-row">
-              <span class="tool-emoji">💬</span>
+              <span class="tool-emoji">&#128172;</span>
               <span class="tool-name">Twilio SMS</span>
               <span class="tool-price">$99/mo</span>
               <div class="tool-strike"></div>
             </div>
             <div class="tool-row">
-              <span class="tool-emoji">⚡</span>
+              <span class="tool-emoji">&#9889;</span>
               <span class="tool-name">Zapier</span>
               <span class="tool-price">$49/mo</span>
               <div class="tool-strike"></div>
             </div>
             <div class="tool-row">
-              <span class="tool-emoji">🌐</span>
+              <span class="tool-emoji">&#127760;</span>
               <span class="tool-name">WordPress + Hosting</span>
               <span class="tool-price">$50/mo</span>
               <div class="tool-strike"></div>
             </div>
             <div class="tool-row">
-              <span class="tool-emoji">📊</span>
+              <span class="tool-emoji">&#128202;</span>
               <span class="tool-name">Keap CRM</span>
               <span class="tool-price">$189/mo</span>
               <div class="tool-strike"></div>
             </div>
             <div class="tool-row">
-              <span class="tool-emoji">⭐</span>
+              <span class="tool-emoji">&#11088;</span>
               <span class="tool-name">Podium Reviews</span>
               <span class="tool-price">$218/mo</span>
               <div class="tool-strike"></div>
@@ -383,246 +418,26 @@
         <!-- AFTER column -->
         <div class="tools-after">
           <div class="tools-col-header tools-col-header--good">
-            <span class="col-icon">✅</span> After GHL
+            <span class="col-icon">&#9989;</span> After GHL
             <span class="col-total col-total--good">From $97/mo</span>
           </div>
           <div class="ghl-platform-card">
             <div class="ghl-logo-badge">GHL</div>
             <div class="ghl-platform-name">GoHighLevel</div>
-            <div class="ghl-platform-sub">Complete Business Operating System</div>
+            <div class="ghl-platform-sub">Complete Practice Operating System</div>
             <div class="ghl-features-grid">
-              <span><span class="gf-check">✓</span> Funnels</span>
-              <span><span class="gf-check">✓</span> CRM</span>
-              <span><span class="gf-check">✓</span> Email</span>
-              <span><span class="gf-check">✓</span> SMS</span>
-              <span><span class="gf-check">✓</span> Booking</span>
-              <span><span class="gf-check">✓</span> Automation</span>
-              <span><span class="gf-check">✓</span> Website</span>
-              <span><span class="gf-check">✓</span> Reviews</span>
-              <span><span class="gf-check">✓</span> Courses</span>
-              <span><span class="gf-check">✓</span> Analytics</span>
+              <span><span class="gf-check">&#10003;</span> Funnels</span>
+              <span><span class="gf-check">&#10003;</span> CRM</span>
+              <span><span class="gf-check">&#10003;</span> Email</span>
+              <span><span class="gf-check">&#10003;</span> SMS</span>
+              <span><span class="gf-check">&#10003;</span> Booking</span>
+              <span><span class="gf-check">&#10003;</span> Automation</span>
+              <span><span class="gf-check">&#10003;</span> Website</span>
+              <span><span class="gf-check">&#10003;</span> Reviews</span>
+              <span><span class="gf-check">&#10003;</span> Courses</span>
+              <span><span class="gf-check">&#10003;</span> Analytics</span>
             </div>
           </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== SERVICES ===== -->
-  <section class="section services" id="services">
-    <div class="container">
-      <div class="section-header fade-up">
-        <span class="section-tag">What We Do</span>
-        <h2 class="section-title">Complete GHL Services<br />Built to Grow Your Business</h2>
-        <p class="section-subtitle">Everything you need — designed, built, and launched inside GoHighLevel by a certified expert.</p>
-      </div>
-      <div class="services-grid">
-
-        <div class="service-card tilt-card fade-up">
-          <div class="card-glow"></div>
-          <div class="service-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-          </div>
-          <h3>GHL Sub-Account Setup</h3>
-          <ul class="service-list">
-            <li>Complete GHL account configuration from scratch</li>
-            <li>Custom domain &amp; branding setup</li>
-            <li>Integrations with your existing tools</li>
-            <li>Calendar, forms &amp; tracking setup</li>
-          </ul>
-        </div>
-
-        <div class="service-card tilt-card fade-up">
-          <div class="card-glow"></div>
-          <div class="service-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h18v18H3z"/><path d="M3 9h18M9 21V9"/></svg>
-          </div>
-          <h3>Sales Funnel &amp; Website Builder</h3>
-          <ul class="service-list">
-            <li>High-converting landing pages &amp; funnels</li>
-            <li>Full websites built inside GHL</li>
-            <li>A/B tested copy &amp; design</li>
-            <li>Mobile-optimized &amp; fast-loading</li>
-          </ul>
-        </div>
-
-        <div class="service-card tilt-card fade-up">
-          <div class="card-glow"></div>
-          <div class="service-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
-          </div>
-          <h3>CRM Pipeline &amp; Automation</h3>
-          <ul class="service-list">
-            <li>Custom sales pipeline design</li>
-            <li>Automated workflows &amp; triggers</li>
-            <li>Lead scoring &amp; tagging systems</li>
-            <li>Appointment booking automation</li>
-          </ul>
-        </div>
-
-        <div class="service-card tilt-card fade-up">
-          <div class="card-glow"></div>
-          <div class="service-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-          </div>
-          <h3>Lead Generation System</h3>
-          <ul class="service-list">
-            <li>Facebook &amp; Google Ads integration</li>
-            <li>Automated lead capture funnels</li>
-            <li>Instant follow-up sequences</li>
-            <li>Lead nurturing &amp; re-engagement flows</li>
-          </ul>
-        </div>
-
-        <div class="service-card tilt-card fade-up">
-          <div class="card-glow"></div>
-          <div class="service-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          </div>
-          <h3>Email &amp; SMS Marketing</h3>
-          <ul class="service-list">
-            <li>Automated email drip campaigns</li>
-            <li>SMS &amp; voicemail drop sequences</li>
-            <li>Broadcast campaigns &amp; newsletters</li>
-            <li>Reputation management &amp; review requests</li>
-          </ul>
-        </div>
-
-        <div class="service-card service-card--featured tilt-card fade-up">
-          <div class="featured-badge">Agency Special</div>
-          <div class="card-glow"></div>
-          <div class="service-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-          </div>
-          <h3>White-Label GHL for Agencies</h3>
-          <ul class="service-list">
-            <li>Full white-label GHL agency setup</li>
-            <li>SaaS mode configuration &amp; pricing</li>
-            <li>Onboarding workflows for your clients</li>
-            <li>Resell GHL under your own brand</li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== WHY GHL ===== -->
-  <section class="section why-ghl" id="why-ghl">
-    <div class="container">
-      <div class="why-ghl-inner">
-        <div class="why-ghl-text fade-up">
-          <span class="section-tag">Why GoHighLevel</span>
-          <h2 class="section-title">The All-in-One Platform<br />Every Business Needs</h2>
-          <p class="section-subtitle">GoHighLevel replaces dozens of tools with one powerful platform — and as a certified GHL expert, I build it right the first time.</p>
-          <a href="#contact" class="btn btn-primary btn-glow">Get Your GHL System Built</a>
-        </div>
-        <div class="why-ghl-benefits fade-up">
-          <div class="benefit-card">
-            <div class="benefit-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
-            </div>
-            <div>
-              <h4>All-in-One Platform</h4>
-              <p>CRM, funnels, email, SMS, calendar, website — everything in one place. No more tool chaos.</p>
-            </div>
-          </div>
-          <div class="benefit-card">
-            <div class="benefit-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="2"/></svg>
-            </div>
-            <div>
-              <h4>White-Label Ready</h4>
-              <p>Agency owners can resell GHL under their own brand and create a recurring SaaS revenue stream.</p>
-            </div>
-          </div>
-          <div class="benefit-card">
-            <div class="benefit-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-            </div>
-            <div>
-              <h4>Saves $1,000s in Tools</h4>
-              <p>Replace ClickFunnels, ActiveCampaign, Calendly, and 10+ other tools with one GHL subscription.</p>
-            </div>
-          </div>
-          <div class="benefit-card">
-            <div class="benefit-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
-            </div>
-            <div>
-              <h4>Scales With Your Business</h4>
-              <p>From solo freelancer to full agency — GHL grows with you. Built once, used forever.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== RESULTS / STATS COUNTER ===== -->
-  <section class="section results" id="results">
-    <div class="container">
-      <div class="section-header fade-up">
-        <span class="section-tag">Proven Results</span>
-        <h2 class="section-title">Numbers That Speak<br />for Themselves</h2>
-      </div>
-      <div class="results-grid">
-
-        <div class="result-item fade-up">
-          <div class="result-ring-wrap">
-            <svg class="result-ring" viewBox="0 0 100 100">
-              <circle class="ring-track" cx="50" cy="50" r="40"/>
-              <circle class="ring-fill" cx="50" cy="50" r="40" data-pct="85"/>
-            </svg>
-            <div class="result-center">
-              <div class="result-number count-up" data-target="50" data-suffix="+">50+</div>
-            </div>
-          </div>
-          <div class="result-label">GHL Systems Built</div>
-          <div class="result-sub">For agencies &amp; small businesses</div>
-        </div>
-
-        <div class="result-item fade-up">
-          <div class="result-ring-wrap">
-            <svg class="result-ring" viewBox="0 0 100 100">
-              <circle class="ring-track" cx="50" cy="50" r="40"/>
-              <circle class="ring-fill" cx="50" cy="50" r="40" data-pct="92"/>
-            </svg>
-            <div class="result-center">
-              <div class="result-number count-up" data-target="900" data-prefix="$" data-suffix="+">$900+</div>
-            </div>
-          </div>
-          <div class="result-label">Monthly Savings / Client</div>
-          <div class="result-sub">After consolidating to GHL</div>
-        </div>
-
-        <div class="result-item fade-up">
-          <div class="result-ring-wrap">
-            <svg class="result-ring" viewBox="0 0 100 100">
-              <circle class="ring-track" cx="50" cy="50" r="40"/>
-              <circle class="ring-fill" cx="50" cy="50" r="40" data-pct="78"/>
-            </svg>
-            <div class="result-center">
-              <div class="result-number count-up" data-target="500" data-suffix="+">500+</div>
-            </div>
-          </div>
-          <div class="result-label">Automations Created</div>
-          <div class="result-sub">Workflows running on autopilot</div>
-        </div>
-
-        <div class="result-item fade-up">
-          <div class="result-ring-wrap">
-            <svg class="result-ring" viewBox="0 0 100 100">
-              <circle class="ring-track" cx="50" cy="50" r="40"/>
-              <circle class="ring-fill" cx="50" cy="50" r="40" data-pct="100"/>
-            </svg>
-            <div class="result-center">
-              <div class="result-number count-up" data-target="100" data-suffix="%">100%</div>
-            </div>
-          </div>
-          <div class="result-label">Client Satisfaction</div>
-          <div class="result-sub">5-star rated service every time</div>
         </div>
 
       </div>
@@ -634,7 +449,8 @@
     <div class="container">
       <div class="section-header fade-up">
         <span class="section-tag">Our Process</span>
-        <h2 class="section-title">From Zero to Fully Automated<br />in 3 Simple Steps</h2>
+        <h2 class="section-title">From first call to fully automated<br />in about two weeks</h2>
+        <p class="section-subtitle">No 3-month onboarding. No 40-page questionnaires. Just a tight process we&rsquo;ve run dozens of times.</p>
       </div>
       <div class="steps-grid">
 
@@ -647,7 +463,7 @@
             <div class="step-ping"></div>
           </div>
           <h3>Strategy Call</h3>
-          <p>A deep-dive to understand your business, goals, current tools, and ideal customer — so we build exactly what you need.</p>
+          <p>We map your patient journey &mdash; where leads come from, where they leak, and what a booked calendar is worth to you. Then we tell you honestly if we&rsquo;re the right fit.</p>
           <div class="step-tag">Free &amp; No Obligation</div>
         </div>
 
@@ -672,9 +488,9 @@
             </div>
             <div class="step-ping"></div>
           </div>
-          <h3>Custom GHL Build</h3>
-          <p>I build your entire GHL system — funnels, automations, CRM pipelines, email &amp; SMS sequences — fully customized.</p>
-          <div class="step-tag">7–14 Day Delivery</div>
+          <h3>We Build Everything</h3>
+          <p>We build your entire GHL system &mdash; funnels, automations, pipelines, email &amp; SMS sequences &mdash; branded as your practice, tested before it ever touches a real patient.</p>
+          <div class="step-tag">7&ndash;14 Day Delivery</div>
         </div>
 
         <div class="step-connector fade-up">
@@ -698,86 +514,9 @@
             </div>
             <div class="step-ping"></div>
           </div>
-          <h3>Launch &amp; Scale</h3>
-          <p>Your system goes live. Leads flow in automatically, follow-ups run on autopilot, and you close more deals.</p>
+          <h3>Launch &amp; Fill Chairs</h3>
+          <p>Your system goes live. Inquiries get answered in seconds, reminders go out on their own, and reviews start stacking up. We stay on call while you settle in.</p>
           <div class="step-tag">Ongoing Support</div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== PRICING ===== -->
-  <section class="section pricing" id="pricing">
-    <div class="container">
-      <div class="section-header fade-up">
-        <span class="section-tag">Pricing</span>
-        <h2 class="section-title">Simple, Transparent Pricing</h2>
-        <p class="section-subtitle">Choose the plan that fits your stage. Every plan is built on GoHighLevel.</p>
-      </div>
-      <div class="pricing-grid">
-
-        <div class="pricing-card fade-up">
-          <div class="plan-name">Starter</div>
-          <div class="plan-price">
-            <span class="price-label">Starting at</span>
-            <span class="price-amount">$497</span>
-            <span class="price-period">one-time</span>
-          </div>
-          <p class="plan-desc">Perfect for small businesses getting started with GHL.</p>
-          <ul class="plan-features">
-            <li><span class="check">✓</span> GHL sub-account setup &amp; configuration</li>
-            <li><span class="check">✓</span> CRM pipeline setup (up to 3 stages)</li>
-            <li><span class="check">✓</span> Basic automation workflow (1 flow)</li>
-            <li><span class="check">✓</span> Calendar &amp; booking integration</li>
-            <li><span class="check">✓</span> Custom domain &amp; branding</li>
-            <li><span class="check">✓</span> 1-week delivery</li>
-            <li class="muted"><span class="cross">✗</span> Funnels &amp; landing pages</li>
-            <li class="muted"><span class="cross">✗</span> Email &amp; SMS sequences</li>
-          </ul>
-          <a href="#contact" class="btn btn-outline btn-block">Get Started</a>
-        </div>
-
-        <div class="pricing-card pricing-card--popular fade-up">
-          <div class="popular-badge">Most Popular</div>
-          <div class="plan-name">Growth</div>
-          <div class="plan-price">
-            <span class="price-label">Starting at</span>
-            <span class="price-amount">$997</span>
-            <span class="price-period">/ month</span>
-          </div>
-          <p class="plan-desc">Full GHL system with lead generation &amp; automation.</p>
-          <ul class="plan-features">
-            <li><span class="check">✓</span> Everything in Starter</li>
-            <li><span class="check">✓</span> 2 high-converting funnels / landing pages</li>
-            <li><span class="check">✓</span> Email &amp; SMS drip sequences</li>
-            <li><span class="check">✓</span> Lead generation (FB/Google Ads)</li>
-            <li><span class="check">✓</span> Advanced automation workflows</li>
-            <li><span class="check">✓</span> Reputation management setup</li>
-            <li><span class="check">✓</span> Monthly optimization &amp; support</li>
-            <li><span class="check">✓</span> Priority response time</li>
-          </ul>
-          <a href="#contact" class="btn btn-primary btn-block btn-glow">Get Started</a>
-        </div>
-
-        <div class="pricing-card fade-up">
-          <div class="plan-name">Scale</div>
-          <div class="plan-price">
-            <span class="price-label">Custom</span>
-            <span class="price-amount">Enterprise</span>
-          </div>
-          <p class="plan-desc">Full white-label GHL agency system for agency owners.</p>
-          <ul class="plan-features">
-            <li><span class="check">✓</span> Everything in Growth</li>
-            <li><span class="check">✓</span> White-label GHL agency setup</li>
-            <li><span class="check">✓</span> SaaS mode &amp; pricing configuration</li>
-            <li><span class="check">✓</span> Client onboarding automation</li>
-            <li><span class="check">✓</span> Unlimited sub-accounts management</li>
-            <li><span class="check">✓</span> Custom reporting &amp; dashboards</li>
-            <li><span class="check">✓</span> Dedicated GHL account manager</li>
-            <li><span class="check">✓</span> Ongoing training &amp; support</li>
-          </ul>
-          <a href="#contact" class="btn btn-outline btn-block">Contact Us</a>
         </div>
 
       </div>
@@ -789,82 +528,237 @@
     <div class="container">
       <div class="section-header fade-up">
         <span class="section-tag">Proof of Work</span>
-        <h2 class="section-title">Real Systems. Built for Paying Clients.</h2>
-        <p class="section-subtitle">CRM Flow Lab is new — the experience behind it isn't. Here's a look inside actual GoHighLevel systems I've built and run for paying clients. Client names hidden for privacy.</p>
+        <h2 class="section-title">Real systems, running<br />in real practices</h2>
+        <p class="section-subtitle">CRM Flow Lab is new &mdash; the experience behind it isn&rsquo;t. Here&rsquo;s a look inside actual GoHighLevel systems we&rsquo;ve built and run for paying clients. Client names hidden for privacy.</p>
       </div>
 
       <!-- 3-Column Video Grid -->
-      <div class="proof-grid-videos">
-        <figure class="proof-card fade-up">
+      <div class="proof-grid-videos" data-stagger>
+        <figure class="proof-card spotlight">
           <video autoplay muted loop playsinline preload="metadata" controls poster="images/proof/video-notification-engine-poster.jpg">
             <source src="images/proof/video-notification-engine.mp4" type="video/mp4">
           </video>
           <figcaption>
             <h4>Automated booking reminders</h4>
-            <p>48-hour, 24-hour and day-of reminders across email + SMS — the no-show killer every clinic needs.</p>
+            <p>48-hour, 24-hour and day-of reminders across email + SMS &mdash; the no-show killer every practice needs.</p>
           </figcaption>
         </figure>
 
-        <figure class="proof-card fade-up">
+        <figure class="proof-card spotlight">
           <video autoplay muted loop playsinline preload="metadata" controls poster="images/proof/video-review-automations-poster.jpg">
             <source src="images/proof/video-review-automations.mp4" type="video/mp4">
           </video>
           <figcaption>
             <h4>Review-request automation</h4>
-            <p>Every survey response routed to the right follow-up — happy patients asked for reviews, unhappy ones recovered.</p>
+            <p>Every survey response routed to the right follow-up &mdash; happy patients asked for reviews, unhappy ones recovered quietly.</p>
           </figcaption>
         </figure>
 
-        <figure class="proof-card fade-up">
+        <figure class="proof-card spotlight">
           <video autoplay muted loop playsinline preload="metadata" controls poster="images/proof/video-new-lead-intake-poster.jpg">
             <source src="images/proof/video-new-lead-intake.mp4" type="video/mp4">
           </video>
           <figcaption>
             <h4>After-hours lead intake</h4>
-            <p>New inquiries tagged, assigned and routed automatically — even at midnight, even on weekends.</p>
-          </figcaption>
-        </figure>
-      </div>
-
-      <!-- 4-Column Image Grid -->
-      <div class="proof-grid-images proof-images">
-        <figure class="proof-card fade-up">
-          <img src="images/proof/portfolio-1-tennis-academy.jpg" alt="Full website + membership funnel" loading="lazy">
-          <figcaption>
-            <h4>Full website + membership funnel</h4>
-            <p>Plans, checkout flow and onboarding pages for a paying client.</p>
-          </figcaption>
-        </figure>
-
-        <figure class="proof-card fade-up">
-          <img src="images/proof/portfolio-2a-summit-hero.jpg" alt="Event registration funnel" loading="lazy">
-          <figcaption>
-            <h4>Event registration funnel</h4>
-            <p>Speakers, schedule and registration flow — built to convert.</p>
-          </figcaption>
-        </figure>
-
-        <figure class="proof-card fade-up">
-          <img src="images/proof/portfolio-4a-eco-services.jpg" alt="Service landing page" loading="lazy">
-          <figcaption>
-            <h4>Service landing page</h4>
-            <p>Quote-focused page with service sections for a local business.</p>
-          </figcaption>
-        </figure>
-
-        <figure class="proof-card fade-up">
-          <img src="images/proof/portfolio-5a-trust-center.png" alt="SMS deliverability, done right" loading="lazy">
-          <figcaption>
-            <h4>SMS deliverability, done right</h4>
-            <p>A2P messaging + SHAKEN/STIR approved — so reminders actually get delivered.</p>
+            <p>New inquiries tagged, assigned and routed automatically &mdash; even at midnight, even on weekends.</p>
           </figcaption>
         </figure>
       </div>
 
       <!-- Centered CTA -->
       <div class="proof-cta fade-up">
-        <p class="proof-cta-text">Want this running for your clinic?</p>
-        <a href="#contact" class="btn btn-primary btn-glow">Get a free 15-min follow-up audit</a>
+        <p class="proof-cta-text">Want this running in your practice?</p>
+        <a href="contact.html" class="btn btn-primary btn-glow">Get a free 15-min follow-up audit</a>
+        <p style="margin-top:14px;"><a href="results.html" style="font-weight:700; color:var(--accent);">See all our work &rarr;</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="section testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag">Client Words</span>
+        <h2 class="section-title">What practices say<br />after we build</h2>
+        <p class="section-subtitle">Real clients, real systems, real calendars.</p>
+      </div>
+
+      <div class="fade-up">
+        <div class="tslider">
+          <div class="tslider-track">
+
+            <!-- TODO: Replace with a real client testimonial (quote + name + practice).
+                 Photos in images/testimonials/ are placeholders until then. -->
+            <div class="tslide">
+              <div class="testimonial-card is-placeholder">
+                <span class="quote-mark">&ldquo;</span>
+                <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <p class="testimonial-text">Your client&rsquo;s words go here. Two or three honest lines about what changed after the build &mdash; specific beats polished. Ask a past client: &ldquo;what&rsquo;s different now?&rdquo;</p>
+                <div class="testimonial-author">
+                  <img class="author-avatar" src="images/testimonials/sarah-rodriguez.jpg" alt="Client photo" />
+                  <div class="author-info">
+                    <div class="author-name">Client Name</div>
+                    <div class="author-role">Practice Name</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- TODO: Replace with a real client testimonial -->
+            <div class="tslide">
+              <div class="testimonial-card is-placeholder">
+                <span class="quote-mark">&ldquo;</span>
+                <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <p class="testimonial-text">A number makes a testimonial ten times stronger &mdash; &ldquo;no-shows dropped,&rdquo; &ldquo;we reply in a minute now,&rdquo; &ldquo;reviews doubled.&rdquo; If your client mentions one, keep it word for word.</p>
+                <div class="testimonial-author">
+                  <img class="author-avatar" src="images/testimonials/james-mitchell.webp" alt="Client photo" />
+                  <div class="author-info">
+                    <div class="author-name">Client Name</div>
+                    <div class="author-role">Practice Name</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- TODO: Replace with a real client testimonial -->
+            <div class="tslide">
+              <div class="testimonial-card is-placeholder">
+                <span class="quote-mark">&ldquo;</span>
+                <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <p class="testimonial-text">Short video testimonials outperform written ones. Ask a happy client for a 30-second phone video &mdash; we&rsquo;ll embed it right here.</p>
+                <div class="testimonial-author">
+                  <img class="author-avatar" src="images/testimonials/daniel-kim.jpg" alt="Client photo" />
+                  <div class="author-info">
+                    <div class="author-name">Client Name</div>
+                    <div class="author-role">Practice Name</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="tslider-nav">
+          <button class="tarrow tarrow-prev" aria-label="Previous testimonial">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+          </button>
+          <div class="tslider-dots" style="display:flex; gap:8px;"></div>
+          <button class="tarrow tarrow-next" aria-label="Next testimonial">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRICING TEASER ===== -->
+  <section class="section pricing" id="pricing">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag">Pricing</span>
+        <h2 class="section-title">Simple pricing,<br />built for practices</h2>
+        <p class="section-subtitle">One extra high-ticket case a month usually covers the whole investment.</p>
+      </div>
+      <div class="pricing-grid" data-stagger>
+
+        <div class="pricing-card spotlight">
+          <div class="plan-name">Starter</div>
+          <div class="plan-price">
+            <span class="price-label">Starting at</span>
+            <span class="price-amount">$497</span>
+            <span class="price-period">one-time</span>
+          </div>
+          <p class="plan-desc">Your GHL foundation &mdash; configured, branded, and ready.</p>
+          <ul class="plan-features">
+            <li><span class="check">&#10003;</span> GHL sub-account setup &amp; configuration</li>
+            <li><span class="check">&#10003;</span> Patient pipeline setup</li>
+            <li><span class="check">&#10003;</span> Online booking &amp; calendar</li>
+            <li><span class="check">&#10003;</span> Custom domain &amp; branding</li>
+            <li><span class="check">&#10003;</span> 1-week delivery</li>
+          </ul>
+          <a href="pricing.html" class="btn btn-outline btn-block">See Details</a>
+        </div>
+
+        <div class="pricing-card pricing-card--popular spotlight">
+          <div class="popular-badge">Most Popular</div>
+          <div class="plan-name">Growth</div>
+          <div class="plan-price">
+            <span class="price-label">Starting at</span>
+            <span class="price-amount">$997</span>
+            <span class="price-period">/ month</span>
+          </div>
+          <p class="plan-desc">The full patient-acquisition machine, managed for you.</p>
+          <ul class="plan-features">
+            <li><span class="check">&#10003;</span> Everything in Starter</li>
+            <li><span class="check">&#10003;</span> 2 booking funnels for top treatments</li>
+            <li><span class="check">&#10003;</span> Instant lead-response automation</li>
+            <li><span class="check">&#10003;</span> No-show reminders + review engine</li>
+            <li><span class="check">&#10003;</span> Reactivation campaigns</li>
+            <li><span class="check">&#10003;</span> Monthly optimization &amp; support</li>
+          </ul>
+          <a href="pricing.html" class="btn btn-primary btn-block btn-glow">See Details</a>
+        </div>
+
+        <div class="pricing-card spotlight">
+          <div class="plan-name">Scale</div>
+          <div class="plan-price">
+            <span class="price-label">Custom</span>
+            <span class="price-amount">Multi-location</span>
+          </div>
+          <p class="plan-desc">For groups and franchises running several practices.</p>
+          <ul class="plan-features">
+            <li><span class="check">&#10003;</span> Everything in Growth</li>
+            <li><span class="check">&#10003;</span> Multi-location setup &amp; reporting</li>
+            <li><span class="check">&#10003;</span> Centralized lead routing</li>
+            <li><span class="check">&#10003;</span> Staff training &amp; SOPs</li>
+            <li><span class="check">&#10003;</span> Dedicated account manager</li>
+          </ul>
+          <a href="contact.html" class="btn btn-outline btn-block">Talk to Us</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag">Questions</span>
+        <h2 class="section-title">Asked all the time</h2>
+      </div>
+      <div class="faq-list fade-up">
+        <div class="faq-item">
+          <button class="faq-q">Do you only work with dental clinics and med spas?<span class="faq-icon">+</span></button>
+          <div class="faq-a"><p>That&rsquo;s our focus, and it&rsquo;s deliberate. Our funnels, automations, and follow-up sequences are built around how practices actually run &mdash; consults, recalls, no-shows, reviews. If you&rsquo;re another appointment-based local business, talk to us anyway; but practices get the version we&rsquo;ve refined the most.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">We already have GoHighLevel. Can you fix what&rsquo;s there?<span class="faq-icon">+</span></button>
+          <div class="faq-a"><p>Yes &mdash; audits and cleanups are some of our favorite work. We&rsquo;ll go through your account, tell you plainly what&rsquo;s broken or missing, and fix it. Most practices we meet are using about 20% of what GHL can do.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">How fast can we go live?<span class="faq-icon">+</span></button>
+          <div class="faq-a"><p>Most builds launch in 7&ndash;14 days from the strategy call. Bigger multi-location setups take a little longer. We&rsquo;d rather give you a real date than a fast one we can&rsquo;t hit.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Do we own everything you build?<span class="faq-icon">+</span></button>
+          <div class="faq-a"><p>100%. It&rsquo;s your GoHighLevel account, your data, your automations, your funnels. If we ever part ways, everything stays with you and keeps running. No hostage situations.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">What happens on the free call?<span class="faq-icon">+</span></button>
+          <div class="faq-a"><p>Fifteen minutes. We ask about your patient flow, you ask about us. If there&rsquo;s a fit, we send a short plan with exact pricing. If not, you still leave with a free audit of where patients are leaking &mdash; no pitch ambush.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA BAND ===== -->
+  <section class="section" id="cta">
+    <div class="container">
+      <div class="cta-band reveal-scale">
+        <h2>Your next patient is searching right now.</h2>
+        <p>Make sure your practice answers first &mdash; even at 11pm on a Saturday. Book a free 15-minute call and we&rsquo;ll show you exactly where patients are slipping away.</p>
+        <a href="contact.html" class="btn btn-primary btn-lg btn-glow">Book a Free Call</a>
       </div>
     </div>
   </section>
@@ -875,91 +769,102 @@
       <div class="contact-inner">
         <div class="contact-text fade-up">
           <span class="section-tag">Get In Touch</span>
-          <h2 class="section-title">Ready to Automate<br />Your Business?</h2>
-          <p class="section-subtitle">Fill out the form and we'll get back to you within 24 hours to schedule your free strategy call.</p>
+          <h2 class="section-title">Ready to fill<br />your calendar?</h2>
+          <p class="section-subtitle">Tell us about your practice. We&rsquo;ll get back within 24 hours to schedule your free strategy call.</p>
           <div class="contact-info">
             <div class="contact-item">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
               <span>info@crmflowlab.com</span>
             </div>
             <div class="contact-item">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.62 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-              <span>24/7 AI-Powered Support</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span>Replies within 24 hours</span>
             </div>
           </div>
         </div>
-  <div class="contact-form-wrap fade-up">
-    <iframe
-  src="https://api.leadconnectorhq.com/widget/form/YeJcpd7tCNkFeBkOTq8s"
-  style="width:100%;min-height:620px;border:none;border-radius:8px;"
-  id="inline-YeJcpd7tCNkFeBkOTq8s"
-  data-layout="{'id':'INLINE'}"
-  data-trigger-type="alwaysShow"
-  data-trigger-value=""
-  data-activation-type="alwaysActivated"
-  data-activation-value=""
-  data-deactivation-type="neverDeactivate"
-  data-deactivation-value=""
-  data-form-name="Contact Form"
-  data-height="620"
-  data-layout-iframe-id="inline-YeJcpd7tCNkFeBkOTq8s"
-  data-form-id="YeJcpd7tCNkFeBkOTq8s"
-  title="Contact Form">
-</iframe>
-<script src="https://link.msgsndr.com/js/form_embed.js"></script>
+        <div class="contact-form-wrap fade-up">
+          <iframe
+            src="https://api.leadconnectorhq.com/widget/form/YeJcpd7tCNkFeBkOTq8s"
+            style="width:100%;min-height:620px;border:none;border-radius:8px;"
+            id="inline-YeJcpd7tCNkFeBkOTq8s"
+            data-layout="{'id':'INLINE'}"
+            data-trigger-type="alwaysShow"
+            data-trigger-value=""
+            data-activation-type="alwaysActivated"
+            data-activation-value=""
+            data-deactivation-type="neverDeactivate"
+            data-deactivation-value=""
+            data-form-name="Contact Form"
+            data-height="620"
+            data-layout-iframe-id="inline-YeJcpd7tCNkFeBkOTq8s"
+            data-form-id="YeJcpd7tCNkFeBkOTq8s"
+            title="Contact Form">
+          </iframe>
+          <script src="https://link.msgsndr.com/js/form_embed.js"></script>
         </div>
       </div>
     </div>
   </section>
+
   <!-- ===== FOOTER ===== -->
   <footer class="footer">
     <div class="container footer-inner">
       <div class="footer-brand">
-        <a href="#" class="logo">
+        <a href="index.html" class="logo">
           <span class="logo-crm">CRM</span><span class="logo-flow"> Flow</span><span class="logo-lab"> Lab</span>
         </a>
-        <p class="footer-tagline">Automate. Generate. Scale.</p>
+        <p class="footer-tagline">GoHighLevel systems for dental clinics &amp; med spas.</p>
         <div class="social-links">
           <a href="https://www.linkedin.com/in/usman-ali-b810b6411/" target="_blank" class="social-link" aria-label="LinkedIn">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
           </a>
-         <a href="https://www.instagram.com/crmflowlab/" target="_blank" class="social-link" aria-label="Instagram">
+          <a href="https://www.instagram.com/crmflowlab/" target="_blank" class="social-link" aria-label="Instagram">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
           </a>
         </div>
       </div>
       <div class="footer-links">
         <div class="footer-col">
+          <h4>Who We Help</h4>
+          <ul>
+            <li><a href="dental.html">Dental Clinics</a></li>
+            <li><a href="medspa.html">Med Spas</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
           <h4>Services</h4>
           <ul>
-            <li><a href="#services">GHL Sub-Account Setup</a></li>
-            <li><a href="#services">Sales Funnel Builder</a></li>
-            <li><a href="#services">CRM &amp; Automation</a></li>
-            <li><a href="#services">Lead Generation</a></li>
-            <li><a href="#services">Email &amp; SMS Marketing</a></li>
-            <li><a href="#services">White-Label GHL</a></li>
+            <li><a href="services.html">Booking Funnels</a></li>
+            <li><a href="services.html">Instant Lead Response</a></li>
+            <li><a href="services.html">No-Show Defense</a></li>
+            <li><a href="services.html">Review Generation</a></li>
+            <li><a href="services.html">Recall &amp; Reactivation</a></li>
           </ul>
         </div>
         <div class="footer-col">
           <h4>Company</h4>
           <ul>
-            <li><a href="#tools">Why GoHighLevel</a></li>
-            <li><a href="#how-it-works">How It Works</a></li>
-            <li><a href="#pricing">Pricing</a></li>
-            <li><a href="#proof">Proof of Work</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="results.html">Results</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Book a Call</a></li>
           </ul>
         </div>
       </div>
     </div>
     <div class="footer-bottom">
       <div class="container">
-        <p>&copy; 2026 CRM Flow Lab. All rights reserved. Built with GoHighLevel expertise.</p>
+        <p>&copy; 2026 CRM Flow Lab. All rights reserved.</p>
       </div>
     </div>
   </footer>
 
+  <button class="to-top" id="toTop" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
   <script src="js/main.js"></script>
+  <script src="js/additions.js"></script>
 
   <!-- ===== GHL CHAT WIDGET ===== -->
   <script src="https://widgets.leadconnectorhq.com/loader.js" data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" data-widget-id="6a3c1ff312ec777312a93e1c"></script>
