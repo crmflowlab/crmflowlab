@@ -296,6 +296,12 @@ body { animation: pageIn 0.45s ease both; }
   .page-hero { padding: 140px 0 64px; }
 }
 
+/* ---------- 3-step grid without connectors (contact page) ---------- */
+.steps-grid--trio { grid-template-columns: repeat(3, 1fr); gap: 24px; }
+@media (max-width: 1024px) {
+  .steps-grid--trio { grid-template-columns: 1fr; max-width: 560px; margin: 0 auto; }
+}
+
 /* ---------- Reduced motion ---------- */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
