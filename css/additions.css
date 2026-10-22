@@ -417,3 +417,8 @@ body { animation: pageIn 0.45s ease both; }
 .footer-legal { margin-top: 6px; }
 .footer-legal a { color: var(--text-muted); text-decoration: underline; }
 .footer-legal a:hover { color: var(--accent); }
+
+/* ===== Booking calendar embed ===== */
+.booking-wrap { max-width: 1000px; margin: 0 auto; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-card); box-shadow: var(--shadow-card); padding: 12px; }
+#book { scroll-margin-top: 90px; }
+@media (max-width: 768px) { .booking-wrap { padding: 4px; } }
