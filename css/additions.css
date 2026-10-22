@@ -402,3 +402,18 @@ body { animation: pageIn 0.45s ease both; }
 
 /* ===== Testimonial author info ===== */
 .author-info { display: flex; flex-direction: column; gap: 2px; }
+
+/* ===== Legal pages (Privacy Policy, Terms) ===== */
+.legal-body { max-width: 780px; margin: 0 auto; }
+.legal-body .legal-updated { font-size: 14px; color: var(--text-muted); margin-bottom: 32px; }
+.legal-body h2 { font-size: 22px; font-weight: 700; margin: 40px 0 12px; letter-spacing: -0.01em; }
+.legal-body h3 { font-size: 17px; font-weight: 700; margin: 24px 0 8px; }
+.legal-body p { color: var(--text-dim); line-height: 1.75; margin-bottom: 14px; }
+.legal-body ul { list-style: disc; padding-left: 22px; margin-bottom: 14px; }
+.legal-body li { color: var(--text-dim); line-height: 1.75; margin-bottom: 6px; }
+.legal-body a { color: var(--accent); text-decoration: underline; }
+.legal-body .legal-callout { background: var(--bg-surface); border-left: 4px solid var(--accent); border-radius: 8px; padding: 18px 20px; margin: 20px 0; }
+.legal-body .legal-callout p:last-child { margin-bottom: 0; }
+.footer-legal { margin-top: 6px; }
+.footer-legal a { color: var(--text-muted); text-decoration: underline; }
+.footer-legal a:hover { color: var(--accent); }
