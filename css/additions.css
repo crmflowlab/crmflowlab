@@ -9,7 +9,7 @@
   from { opacity: 0; }
   to   { opacity: 1; }
 }
-body { animation: pageIn 0.45s ease both; }
+/* (body fade-in removed: it hid the whole page on first paint and delayed LCP) */
 
 /* ---------- Staggered entrances ---------- */
 @keyframes riseIn {
@@ -23,6 +23,14 @@ body { animation: pageIn 0.45s ease both; }
 .rise-4 { animation-delay: 0.35s; }
 .rise-5 { animation-delay: 0.45s; }
 .rise-6 { animation-delay: 0.55s; }
+
+/* Page headlines are the Largest Contentful Paint element: keep them visible
+   from the first frame and animate movement only (no opacity fade). */
+@keyframes riseInMove {
+  from { transform: translateY(18px); }
+  to   { transform: translateY(0); }
+}
+h1.rise { opacity: 1; animation-name: riseInMove; animation-delay: 0s; animation-duration: 0.6s; }
 
 /* ---------- Extra scroll-reveal variants ---------- */
 .reveal-left, .reveal-right, .reveal-scale {

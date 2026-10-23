@@ -128,3 +128,21 @@
     });
   }
 })();
+
+/* ── Videos: play only when scrolled into view (nothing downloads on page load) ── */
+(function () {
+  var vids = document.querySelectorAll('video[data-autoplay]');
+  if (!vids.length) return;
+  if (!('IntersectionObserver' in window)) {
+    vids.forEach(function (v) { v.preload = 'metadata'; v.play().catch(function () {}); });
+    return;
+  }
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      var v = e.target;
+      if (e.isIntersecting) { v.preload = 'auto'; v.play().catch(function () {}); }
+      else if (!v.paused) { v.pause(); }
+    });
+  }, { rootMargin: '200px 0px', threshold: 0.25 });
+  vids.forEach(function (v) { io.observe(v); });
+})();

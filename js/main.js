@@ -75,9 +75,15 @@ if (typedEl) {
 }
 
 // ── Particle canvas ──────────────────────────────────────────────────
-(function initParticles() {
+function initParticles() {
   const canvas = document.getElementById('particleCanvas');
   if (!canvas) return;
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  let running = true;
+  new IntersectionObserver(([e]) => {
+    const was = running; running = e.isIntersecting;
+    if (running && !was) requestAnimationFrame(draw);
+  }).observe(canvas);
   const ctx = canvas.getContext('2d');
   let W, H, particles;
 
@@ -99,7 +105,7 @@ if (typedEl) {
     };
   }
 
-  particles = Array.from({ length: 80 }, makeParticle);
+  particles = Array.from({ length: window.innerWidth < 768 ? 30 : 80 }, makeParticle);
 
   function draw() {
     ctx.clearRect(0, 0, W, H);
@@ -115,10 +121,14 @@ if (typedEl) {
       if (p.y < 0) p.y = H;
       if (p.y > H) p.y = 0;
     });
-    requestAnimationFrame(draw);
+    if (running) requestAnimationFrame(draw);
   }
   draw();
-})();
+}
+// start the decorative canvas only after the page has loaded and gone idle
+window.addEventListener('load', () => {
+  (window.requestIdleCallback || ((cb) => setTimeout(cb, 1200)))(initParticles);
+});
 
 // ── CountUp animation ────────────────────────────────────────────────
 function animateCount(el) {
@@ -225,6 +235,7 @@ window.addEventListener('load', () => {
 // ── Contact form ─────────────────────────────────────────────────────
 const form        = document.getElementById('contactForm');
 const submitBtn   = document.getElementById('submitBtn');
+if (form && submitBtn) {
 const btnText     = submitBtn.querySelector('.btn-text');
 const btnLoading  = submitBtn.querySelector('.btn-loading');
 const formSuccess = document.getElementById('formSuccess');
@@ -250,7 +261,7 @@ form.addEventListener('submit', e => {
   const body    = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nPhone: ${phone || 'N/A'}\nBusiness Type: ${business}\n\nMessage:\n${message}`);
 
   setTimeout(() => {
-    window.location.href = `mailto:info@crmflowlab.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:${['info', 'crmflowlab.com'].join('@')}?subject=${subject}&body=${body}`;
     setTimeout(() => {
       btnText.style.display    = 'inline';
       btnLoading.style.display = 'none';
@@ -261,6 +272,7 @@ form.addEventListener('submit', e => {
     }, 1000);
   }, 600);
 });
+}
 
 function highlight(field) {
   field.style.borderColor = '#FF4D6D';

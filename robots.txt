@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://crmflowlab.com/sitemap.xml
+Sitemap: https://www.crmflowlab.com/sitemap.xml
