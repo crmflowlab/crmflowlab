@@ -459,3 +459,24 @@ h1.rise { opacity: 1; animation-name: riseInMove; animation-delay: 0s; animation
   .founder-photo { width: 180px; height: 180px; }
   .founder-initials { font-size: 60px; }
 }
+
+/* ---------- Booking calendar loader ---------- */
+.booking-wrap { position: relative; min-height: 784px; }
+.cal-loader {
+  position: absolute; inset: 0; z-index: 2; min-height: 360px;
+  display: flex; flex-direction: column; align-items: center; justify-content: flex-start;
+  padding-top: 120px; gap: 16px; text-align: center;
+  background: var(--bg-card); border-radius: 14px; color: var(--text-muted);
+  transition: opacity 0.35s ease;
+}
+.cal-loader.done { opacity: 0; pointer-events: none; }
+.cal-spinner {
+  width: 44px; height: 44px; border-radius: 50%;
+  border: 4px solid var(--peach); border-top-color: var(--accent);
+  animation: calSpin 0.8s linear infinite;
+}
+@keyframes calSpin { to { transform: rotate(360deg); } }
+.page-hero.page-hero--compact { padding: 128px 0 32px; }
+@media (max-width: 768px) { .page-hero.page-hero--compact { padding: 104px 0 24px; } }
+.page-hero--compact .page-hero-inner { padding-top: 0; }
+.booking-alt { text-align: center; color: var(--text-muted); max-width: 620px; margin: 20px auto 0; font-size: 0.95rem; }

@@ -37,13 +37,17 @@
   <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "ProfessionalService", "@id": "https://www.crmflowlab.com/#org", "name": "CRM Flow Lab", "url": "https://www.crmflowlab.com/", "logo": "https://www.crmflowlab.com/images/icon-512.png", "image": "https://www.crmflowlab.com/images/og-image.jpg", "description": "GoHighLevel CRM and automation agency for dental clinics and med spas: lead follow-up, appointment reminders, review generation and patient reactivation.", "founder": {"@type": "Person", "name": "Usman Ali", "url": "https://www.linkedin.com/in/usman-ali-b810b6411/"}, "address": {"@type": "PostalAddress", "addressLocality": "Lahore", "addressRegion": "Punjab", "addressCountry": "PK"}, "areaServed": ["US", "GB", "CA", "AU", "NZ"], "knowsAbout": ["GoHighLevel", "CRM automation", "n8n", "Zapier", "Appointment reminders", "Review generation", "Dental practice marketing", "Med spa marketing"], "sameAs": ["https://www.linkedin.com/in/usman-ali-b810b6411/", "https://www.instagram.com/crmflowlab/"]}, {"@type": "WebSite", "@id": "https://www.crmflowlab.com/#website", "url": "https://www.crmflowlab.com/", "name": "CRM Flow Lab", "publisher": {"@id": "https://www.crmflowlab.com/#org"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.crmflowlab.com/"}, {"@type": "ListItem", "position": 2, "name": "Book a Call", "item": "https://www.crmflowlab.com/book"}]}, {"@type": "WebPage", "@id": "https://www.crmflowlab.com/book#webpage", "url": "https://www.crmflowlab.com/book", "name": "Book a Free GoHighLevel Strategy Call | CRM Flow Lab", "description": "Book a free 15-minute strategy call with CRM Flow Lab. We'll look at your practice's booking, follow-up and reviews, then tell you what to automate first.", "isPartOf": {"@id": "https://www.crmflowlab.com/#website"}, "about": {"@id": "https://www.crmflowlab.com/#org"}, "inLanguage": "en"}]}</script>
   <!-- SEO:end -->
   <title>Book a Free GoHighLevel Strategy Call | CRM Flow Lab</title>
+  <link rel="preconnect" href="https://api.leadconnectorhq.com" crossorigin />
+  <link rel="preconnect" href="https://stcdn.leadconnectorhq.com" crossorigin />
+  <link rel="dns-prefetch" href="https://services.leadconnectorhq.com" />
+  <script type="speculationrules">{"prerender":[{"where":{"href_matches":"/book"},"eagerness":"moderate"}],"prefetch":[{"where":{"href_matches":"/contact"},"eagerness":"moderate"}]}</script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'" />
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" /></noscript>
-  <link rel="stylesheet" href="/css/style.css?v=20261024b" />
-  <link rel="stylesheet" href="/css/additions.css?v=20261024b" />
+  <link rel="stylesheet" href="/css/style.css?v=20261024d" />
+  <link rel="stylesheet" href="/css/additions.css?v=20261024d" />
 </head>
 <body>
 
@@ -70,25 +74,40 @@
     </div>
   </nav>
 
-  <section class="page-hero">
+  <section class="page-hero page-hero--compact">
     <div class="orb orb-1"></div>
     <div class="orb orb-2"></div>
     <div class="container page-hero-inner">
       <div class="breadcrumb rise rise-1"><a href="/">Home</a> &nbsp;/&nbsp; Book a Call</div>
       <span class="hero-eyebrow rise rise-2">Free Strategy Call</span>
       <h1 class="rise rise-3">Fifteen minutes.<br />Zero <span class="highlight">pitch ambush</span>.</h1>
-      <p class="lead rise rise-4">Pick a time below. We&rsquo;ll audit your patient follow-up on the call and tell you honestly if we&rsquo;re a fit &mdash; no long form to fill out first.</p>
+      <p class="lead rise rise-4">Pick a time below &mdash; it takes 30 seconds. We&rsquo;ll audit your patient follow-up on the call and tell you honestly if we&rsquo;re a fit &mdash; no long form to fill out first.</p>
+    </div>
+  </section>
+
+  <!-- ===== BOOKING CALENDAR (directly under the headline so it's visible without scrolling) ===== -->
+  <section class="section booking" id="book" style="padding-top:8px;">
+    <div class="container">
+      <div class="booking-wrap">
+        <div class="cal-loader" id="calLoader" aria-live="polite">
+          <div class="cal-spinner" aria-hidden="true"></div>
+          <p><strong>Loading available times&hellip;</strong><br />This takes a few seconds.</p>
+        </div>
+        <iframe src="https://api.leadconnectorhq.com/widget/booking/R6JlaHX61qy0wrRBOBWZ" fetchpriority="high" onload="var l=document.getElementById('calLoader');if(l){setTimeout(function(){l.classList.add('done')},1200)}" style="width:100%;border:none;overflow:hidden;min-height:760px;" scrolling="no" id="R6JlaHX61qy0wrRBOBWZ_booking" title="Book a Free 15-Min Strategy Call"></iframe>
+        <script defer src="https://link.msgsndr.com/js/form_embed.js"></script>
+      </div>
+      <p class="booking-alt">Not ready to book yet? Use the chat bubble in the corner to ask a question first, or <a href="/contact">tell us about your practice</a> and we&rsquo;ll reach out with a link.</p>
     </div>
   </section>
 
   <!-- ===== WHAT HAPPENS NEXT ===== -->
-  <section class="section" style="padding-bottom:0;">
+  <section class="section" style="padding-top:24px;">
     <div class="container">
       <div class="steps-grid steps-grid--trio" data-stagger>
         <div class="step">
           <div class="step-number">01</div>
           <h3>Pick a slot</h3>
-          <p>Choose a time below &mdash; shown in your local timezone. Takes 30 seconds.</p>
+          <p>Choose a time above &mdash; shown in your local timezone. Takes 30 seconds.</p>
           <div class="step-tag">30 seconds</div>
         </div>
         <div class="step">
@@ -107,20 +126,6 @@
     </div>
   </section>
 
-  <!-- ===== BOOKING CALENDAR ===== -->
-  <section class="section booking" id="book">
-    <div class="container">
-      <div class="section-header fade-up">
-        <span class="section-tag">Choose a Time</span>
-        <h2 class="section-title">Book your free<br />15-minute call</h2>
-        <p class="section-subtitle" style="max-width:620px;">Not ready to book yet? Use the chat bubble in the corner to ask a question first, or <a href="/contact">tell us about your practice</a> and we&rsquo;ll reach out with a link.</p>
-      </div>
-      <div class="booking-wrap fade-up">
-        <iframe src="https://api.leadconnectorhq.com/widget/booking/R6JlaHX61qy0wrRBOBWZ" style="width:100%;border:none;overflow:hidden;min-height:760px;" scrolling="no" id="R6JlaHX61qy0wrRBOBWZ_booking" title="Book a Free 15-Min Strategy Call"></iframe>
-        <script defer src="https://link.msgsndr.com/js/form_embed.js"></script>
-      </div>
-    </div>
-  </section>
 
   <footer class="footer">
     <div class="container footer-inner">
@@ -179,8 +184,8 @@
     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
   </button>
 
-  <script defer src="/js/main.js?v=20261024b"></script>
-  <script defer src="/js/additions.js?v=20261024b"></script>
+  <script defer src="/js/main.js?v=20261024d"></script>
+  <script defer src="/js/additions.js?v=20261024d"></script>
   <script>
   /* GHL chat widget: loaded on first interaction (or after 8s) so it never slows the first paint */
   (function () {
