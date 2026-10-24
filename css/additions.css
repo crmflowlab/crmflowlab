@@ -430,3 +430,32 @@ h1.rise { opacity: 1; animation-name: riseInMove; animation-delay: 0s; animation
 .booking-wrap { max-width: 1000px; margin: 0 auto; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-card); box-shadow: var(--shadow-card); padding: 12px; }
 #book { scroll-margin-top: 90px; }
 @media (max-width: 768px) { .booking-wrap { padding: 4px; } }
+
+/* ---------- Founder card (About page) ---------- */
+.founder-card {
+  display: grid; grid-template-columns: 280px 1fr; gap: 48px; align-items: center;
+  background: var(--bg-surface); border: 1px solid var(--peach);
+  border-radius: 20px; padding: 48px;
+}
+.founder-photo {
+  width: 280px; height: 280px; border-radius: 20px; overflow: hidden;
+  background: linear-gradient(135deg, var(--accent), var(--accent-light));
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: var(--shadow-card);
+}
+.founder-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.founder-initials { color: #fff; font-size: 88px; font-weight: 900; letter-spacing: 2px; }
+.founder-name { font-size: 2.2rem; font-weight: 800; margin: 10px 0 4px; }
+.founder-role { color: var(--accent); font-weight: 600; margin: 0 0 18px; }
+.founder-text p { color: var(--text-dim); line-height: 1.7; margin: 0 0 12px; }
+.founder-facts { list-style: none; padding: 0; margin: 22px 0; display: flex; gap: 28px; flex-wrap: wrap; }
+.founder-facts li { display: flex; flex-direction: column; }
+.founder-facts strong { font-size: 1.6rem; font-weight: 800; color: var(--accent); }
+.founder-facts span { font-size: 0.85rem; color: var(--text-muted); }
+.founder-link { display: inline-flex; align-items: center; gap: 8px; font-weight: 600; color: var(--accent); text-decoration: none; }
+.founder-link:hover { text-decoration: underline; }
+@media (max-width: 860px) {
+  .founder-card { grid-template-columns: 1fr; padding: 28px 20px; gap: 28px; text-align: left; }
+  .founder-photo { width: 180px; height: 180px; }
+  .founder-initials { font-size: 60px; }
+}
