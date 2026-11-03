@@ -853,8 +853,7 @@
         </div>
         <div class="contact-form-wrap fade-up">
           <iframe
-            src="https://api.leadconnectorhq.com/widget/form/JjRR6OPXUREl37jMHpfu"
-            loading="lazy"
+            data-src="https://api.leadconnectorhq.com/widget/form/JjRR6OPXUREl37jMHpfu"
             style="width:100%;min-height:1150px;border:none;border-radius:8px;"
             id="inline-JjRR6OPXUREl37jMHpfu"
             data-layout="{'id':'INLINE'}"
@@ -870,7 +869,27 @@
             data-form-id="JjRR6OPXUREl37jMHpfu"
             title="Contact Form">
           </iframe>
-          <script defer src="https://link.msgsndr.com/js/form_embed.js"></script>
+          <script>
+          /* Load the contact form only when the visitor scrolls near it.
+             (Native loading="lazy" breaks here: form_embed.js moves the iframe off-screen
+             until it loads, so a lazy iframe never starts loading.) */
+          (function () {
+            var f = document.getElementById('inline-JjRR6OPXUREl37jMHpfu');
+            if (!f) return;
+            function go() {
+              if (f.src) return;
+              f.src = f.getAttribute('data-src');
+              var s = document.createElement('script');
+              s.src = 'https://link.msgsndr.com/js/form_embed.js'; s.defer = true;
+              document.body.appendChild(s);
+            }
+            if (!('IntersectionObserver' in window) || location.hash === '#contact') { go(); return; }
+            var io = new IntersectionObserver(function (e) {
+              if (e[0].isIntersecting) { io.disconnect(); go(); }
+            }, { rootMargin: '1200px 0px' });
+            io.observe(f.parentNode);
+          })();
+          </script>
         </div>
       </div>
     </div>
