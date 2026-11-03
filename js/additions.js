@@ -146,3 +146,16 @@
   }, { rootMargin: '200px 0px', threshold: 0.25 });
   vids.forEach(function (v) { io.observe(v); });
 })();
+
+/* GA4: track "Book a Free Call" clicks and booking-page visits as lead events (mark book_call_click as a key event in GA4) */
+(function () {
+  function send(name, params) { if (typeof window.gtag === 'function') window.gtag('event', name, params || {}); }
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[href]');
+    if (!a) return;
+    var href = a.getAttribute('href') || '';
+    if (/^\/book\/?(\?|#|$)/.test(href)) send('book_call_click', { link_text: (a.textContent || '').trim().slice(0, 60), page_path: location.pathname });
+    else if (/^\/contact\/?(\?|#|$)/.test(href)) send('contact_click', { page_path: location.pathname });
+    else if (/^(mailto:|tel:)/.test(href)) send('contact_link_click', { link_type: href.split(':')[0] });
+  }, { passive: true });
+})();

@@ -79,6 +79,7 @@ function initParticles() {
   const canvas = document.getElementById('particleCanvas');
   if (!canvas) return;
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  if (window.innerWidth < 768) return; // decorative only: skip on phones to keep the main thread free
   let running = true;
   new IntersectionObserver(([e]) => {
     const was = running; running = e.isIntersecting;
