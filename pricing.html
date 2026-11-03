@@ -3,12 +3,25 @@
 <head>
   <meta charset="UTF-8" />
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HMBVV8P91J"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-HMBVV8P91J');
+    /* gtag.js loads on first interaction (or 3.5s after load) so it never blocks the first paint; queued hits are still sent */
+    (function () {
+      var done = false;
+      function load() {
+        if (done) return; done = true;
+        var s = document.createElement('script');
+        s.async = true; s.src = 'https://www.googletagmanager.com/gtag/js?id=G-HMBVV8P91J';
+        document.head.appendChild(s);
+      }
+      ['scroll', 'pointerdown', 'keydown', 'touchstart', 'mousemove'].forEach(function (e) {
+        window.addEventListener(e, load, { once: true, passive: true });
+      });
+      window.addEventListener('load', function () { setTimeout(load, 3500); });
+    })();
   </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Transparent GoHighLevel pricing for dental clinics and med spas, from a $497 one-time setup to a fully managed monthly growth system." />
@@ -46,8 +59,8 @@
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'" />
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" /></noscript>
-  <link rel="stylesheet" href="/css/style.css?v=20261024d" />
-  <link rel="stylesheet" href="/css/additions.css?v=20261024d" />
+  <link rel="stylesheet" href="/css/style.css?v=20261103a" />
+  <link rel="stylesheet" href="/css/additions.css?v=20261103a" />
 </head>
 <body>
 
@@ -80,7 +93,7 @@
     <div class="container page-hero-inner">
       <div class="breadcrumb rise rise-1"><a href="/">Home</a> &nbsp;/&nbsp; Pricing</div>
       <span class="hero-eyebrow rise rise-2">Pricing</span>
-      <h1 class="rise rise-3">Pricing that<br /><span class="highlight">pays for itself</span>.</h1>
+      <h1 class="rise rise-3">GoHighLevel setup pricing<br />that <span class="highlight">pays for itself</span>.</h1>
       <p class="lead rise rise-4">No hourly billing, no surprise invoices. Pick the level of done-for-you you want &mdash; every plan is built on GoHighLevel, and everything we build is yours to keep.</p>
     </div>
   </section>
@@ -234,6 +247,16 @@
             <li><a href="/services">No-Show Defense</a></li>
             <li><a href="/services">Review Generation</a></li>
             <li><a href="/services">Recall &amp; Reactivation</a></li>
+            <li><a href="/automation">n8n &amp; Zapier Automation</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="/blog/">Blog &amp; Guides</a></li>
+            <li><a href="/blog/gohighlevel-for-dental-practices">GoHighLevel for Dentists</a></li>
+            <li><a href="/blog/dental-patient-reactivation-text-templates">Reactivation Text Templates</a></li>
+            <li><a href="/blog/reduce-med-spa-no-shows">Reduce Med Spa No-Shows</a></li>
           </ul>
         </div>
         <div class="footer-col">
@@ -259,8 +282,8 @@
     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
   </button>
 
-  <script defer src="/js/main.js?v=20261024d"></script>
-  <script defer src="/js/additions.js?v=20261024d"></script>
+  <script defer src="/js/main.js?v=20261103a"></script>
+  <script defer src="/js/additions.js?v=20261103a"></script>
   <script>
   /* GHL chat widget: loaded on first interaction (or after 8s) so it never slows the first paint */
   (function () {

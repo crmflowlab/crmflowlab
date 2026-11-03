@@ -3,12 +3,25 @@
 <head>
   <meta charset="UTF-8" />
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HMBVV8P91J"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-HMBVV8P91J');
+    /* gtag.js loads on first interaction (or 3.5s after load) so it never blocks the first paint; queued hits are still sent */
+    (function () {
+      var done = false;
+      function load() {
+        if (done) return; done = true;
+        var s = document.createElement('script');
+        s.async = true; s.src = 'https://www.googletagmanager.com/gtag/js?id=G-HMBVV8P91J';
+        document.head.appendChild(s);
+      }
+      ['scroll', 'pointerdown', 'keydown', 'touchstart', 'mousemove'].forEach(function (e) {
+        window.addEventListener(e, load, { once: true, passive: true });
+      });
+      window.addEventListener('load', function () { setTimeout(load, 3500); });
+    })();
   </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="GoHighLevel for dental clinics: instant new-patient follow-up, no-show reminders, hygiene recall and review requests that keep your chairs full." />
@@ -34,7 +47,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   <link rel="manifest" href="/site.webmanifest" />
-  <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "ProfessionalService", "@id": "https://www.crmflowlab.com/#org", "name": "CRM Flow Lab", "url": "https://www.crmflowlab.com/", "logo": "https://www.crmflowlab.com/images/icon-512.png", "image": "https://www.crmflowlab.com/images/og-image.jpg", "description": "GoHighLevel CRM and automation agency for dental clinics and med spas: lead follow-up, appointment reminders, review generation and patient reactivation.", "founder": {"@type": "Person", "name": "Usman Ali", "url": "https://www.linkedin.com/in/usman-ali-b810b6411/"}, "address": {"@type": "PostalAddress", "addressLocality": "Lahore", "addressRegion": "Punjab", "addressCountry": "PK"}, "areaServed": ["US", "GB", "CA", "AU", "NZ"], "knowsAbout": ["GoHighLevel", "CRM automation", "n8n", "Zapier", "Appointment reminders", "Review generation", "Dental practice marketing", "Med spa marketing"], "sameAs": ["https://www.linkedin.com/in/usman-ali-b810b6411/", "https://www.instagram.com/crmflowlab/"]}, {"@type": "WebSite", "@id": "https://www.crmflowlab.com/#website", "url": "https://www.crmflowlab.com/", "name": "CRM Flow Lab", "publisher": {"@id": "https://www.crmflowlab.com/#org"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.crmflowlab.com/"}, {"@type": "ListItem", "position": 2, "name": "Dental Clinics", "item": "https://www.crmflowlab.com/dental"}]}, {"@type": "WebPage", "@id": "https://www.crmflowlab.com/dental#webpage", "url": "https://www.crmflowlab.com/dental", "name": "Dental Clinic GoHighLevel Automation | CRM Flow Lab", "description": "GoHighLevel for dental clinics: instant new-patient follow-up, no-show reminders, hygiene recall and review requests that keep your chairs full.", "isPartOf": {"@id": "https://www.crmflowlab.com/#website"}, "about": {"@id": "https://www.crmflowlab.com/#org"}, "inLanguage": "en"}, {"@type": "Service", "name": "GoHighLevel automation for dental clinics", "serviceType": "CRM automation", "provider": {"@id": "https://www.crmflowlab.com/#org"}, "areaServed": ["US", "GB", "CA", "AU", "NZ"], "audience": {"@type": "BusinessAudience", "name": "Dental clinics"}, "url": "https://www.crmflowlab.com/dental"}]}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "ProfessionalService", "@id": "https://www.crmflowlab.com/#org", "name": "CRM Flow Lab", "url": "https://www.crmflowlab.com/", "logo": "https://www.crmflowlab.com/images/icon-512.png", "image": "https://www.crmflowlab.com/images/og-image.jpg", "description": "GoHighLevel CRM and automation agency for dental clinics and med spas: lead follow-up, appointment reminders, review generation and patient reactivation.", "founder": {"@type": "Person", "name": "Usman Ali", "url": "https://www.linkedin.com/in/usman-ali-b810b6411/"}, "address": {"@type": "PostalAddress", "addressLocality": "Lahore", "addressRegion": "Punjab", "addressCountry": "PK"}, "areaServed": ["US", "GB", "CA", "AU", "NZ"], "knowsAbout": ["GoHighLevel", "CRM automation", "n8n", "Zapier", "Appointment reminders", "Review generation", "Dental practice marketing", "Med spa marketing"], "sameAs": ["https://www.linkedin.com/in/usman-ali-b810b6411/", "https://www.instagram.com/crmflowlab/"]}, {"@type": "WebSite", "@id": "https://www.crmflowlab.com/#website", "url": "https://www.crmflowlab.com/", "name": "CRM Flow Lab", "publisher": {"@id": "https://www.crmflowlab.com/#org"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.crmflowlab.com/"}, {"@type": "ListItem", "position": 2, "name": "Dental Clinics", "item": "https://www.crmflowlab.com/dental"}]}, {"@type": "WebPage", "@id": "https://www.crmflowlab.com/dental#webpage", "url": "https://www.crmflowlab.com/dental", "name": "Dental Clinic GoHighLevel Automation | CRM Flow Lab", "description": "GoHighLevel for dental clinics: instant new-patient follow-up, no-show reminders, hygiene recall and review requests that keep your chairs full.", "isPartOf": {"@id": "https://www.crmflowlab.com/#website"}, "about": {"@id": "https://www.crmflowlab.com/#org"}, "inLanguage": "en"}, {"@type": "Service", "name": "GoHighLevel automation for dental clinics", "serviceType": "CRM automation", "provider": {"@id": "https://www.crmflowlab.com/#org"}, "areaServed": ["US", "GB", "CA", "AU", "NZ"], "audience": {"@type": "BusinessAudience", "name": "Dental clinics"}, "url": "https://www.crmflowlab.com/dental"}, {"@type": "FAQPage", "@id": "https://www.crmflowlab.com/dental#faq", "mainEntity": [{"@type": "Question", "name": "What does GoHighLevel do for a dental clinic?", "acceptedAnswer": {"@type": "Answer", "text": "GoHighLevel puts new-patient follow-up, appointment reminders, hygiene recall, treatment-plan follow-up and Google review requests into one system. For a dental clinic that means every inquiry gets a text within a minute, every appointment gets confirmed, and overdue patients are asked to rebook without your front desk making the calls."}}, {"@type": "Question", "name": "Does GoHighLevel replace our practice management software?", "acceptedAnswer": {"@type": "Answer", "text": "No. GoHighLevel handles marketing and patient communication: leads, texts, emails, reminders, reviews and recall campaigns. Your practice management software (Dentrix, Open Dental, Eaglesoft and so on) stays your clinical and billing record. We connect the two where the software allows it and keep the handoff simple where it doesn’t."}}, {"@type": "Question", "name": "How long does a dental GoHighLevel setup take?", "acceptedAnswer": {"@type": "Answer", "text": "Most dental builds go live in 7–14 days from the strategy call. A single-location clinic with one or two booking funnels is at the quicker end; multi-location groups with central lead routing take a little longer."}}, {"@type": "Question", "name": "Is texting patients through GoHighLevel compliant?", "acceptedAnswer": {"@type": "Answer", "text": "Texting is compliant when patients have opted in and your number is A2P 10DLC registered (in the US). We set up opt-in language on every form, register your messaging and keep clinical details out of marketing texts. You should still confirm HIPAA requirements with your own compliance advisor."}}, {"@type": "Question", "name": "How much does GoHighLevel for dentists cost?", "acceptedAnswer": {"@type": "Answer", "text": "Our setup starts at $497 one-time, and the fully managed Growth plan starts at $997 a month. Your GoHighLevel subscription is paid directly to HighLevel (from $97 a month) so the account is always yours. See the pricing page for what each plan includes."}}]}]}</script>
   <!-- SEO:end -->
   <title>Dental Clinic GoHighLevel Automation | CRM Flow Lab</title>
   <link rel="preconnect" href="https://api.leadconnectorhq.com" crossorigin />
@@ -46,8 +59,8 @@
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'" />
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" /></noscript>
-  <link rel="stylesheet" href="/css/style.css?v=20261024d" />
-  <link rel="stylesheet" href="/css/additions.css?v=20261024d" />
+  <link rel="stylesheet" href="/css/style.css?v=20261103a" />
+  <link rel="stylesheet" href="/css/additions.css?v=20261103a" />
 </head>
 <body>
 
@@ -81,7 +94,7 @@
     <div class="container page-hero-inner">
       <div class="breadcrumb rise rise-1"><a href="/">Home</a> &nbsp;/&nbsp; Dental Clinics</div>
       <span class="hero-eyebrow rise rise-2">For Dental Clinics</span>
-      <h1 class="rise rise-3">A full appointment book,<br />without the <span class="highlight">phone tag</span>.</h1>
+      <h1 class="rise rise-3">GoHighLevel for dental clinics:<br />a full book, without the <span class="highlight">phone tag</span>.</h1>
       <p class="lead rise rise-4">Most practices don&rsquo;t have a marketing problem &mdash; they have a follow-up problem. Inquiries arrive at 9pm, nobody replies until morning, and the patient books elsewhere. We build the GoHighLevel system that answers in under a minute, reminds every patient, and quietly fills your hygiene recalls.</p>
       <div class="page-hero-actions rise rise-5">
         <a href="/book" class="btn btn-primary btn-lg btn-glow">Book a Free Call</a>
@@ -182,6 +195,39 @@
     </div>
   </section>
 
+  <!-- ===== FAQ ===== -->
+  <section class="section" id="faq" style="padding-top:0;">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag">Questions</span>
+        <h2 class="section-title">Common questions</h2>
+      </div>
+      <div class="faq-list fade-up">
+        <div class="faq-item">
+          <button class="faq-q">What does GoHighLevel do for a dental clinic?<span class="faq-icon">+</span></button>
+          <div class="faq-a"><p>GoHighLevel puts new-patient follow-up, appointment reminders, hygiene recall, treatment-plan follow-up and Google review requests into one system. For a dental clinic that means every inquiry gets a text within a minute, every appointment gets confirmed, and overdue patients are asked to rebook without your front desk making the calls.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Does GoHighLevel replace our practice management software?<span class="faq-icon">+</span></button>
+          <div class="faq-a"><p>No. GoHighLevel handles marketing and patient communication: leads, texts, emails, reminders, reviews and recall campaigns. Your practice management software (Dentrix, Open Dental, Eaglesoft and so on) stays your clinical and billing record. We connect the two where the software allows it and keep the handoff simple where it doesn&rsquo;t.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">How long does a dental GoHighLevel setup take?<span class="faq-icon">+</span></button>
+          <div class="faq-a"><p>Most dental builds go live in 7&ndash;14 days from the strategy call. A single-location clinic with one or two booking funnels is at the quicker end; multi-location groups with central lead routing take a little longer.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Is texting patients through GoHighLevel compliant?<span class="faq-icon">+</span></button>
+          <div class="faq-a"><p>Texting is compliant when patients have opted in and your number is A2P 10DLC registered (in the US). We set up opt-in language on every form, register your messaging and keep clinical details out of marketing texts. You should still confirm HIPAA requirements with your own compliance advisor.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">How much does GoHighLevel for dentists cost?<span class="faq-icon">+</span></button>
+          <div class="faq-a"><p>Our setup starts at $497 one-time, and the fully managed Growth plan starts at $997 a month. Your GoHighLevel subscription is paid directly to HighLevel (from $97 a month) so the account is always yours. See the <a href="/pricing">pricing page</a> for what each plan includes.</p></div>
+        </div>
+      </div>
+      <p class="faq-more fade-up">Want the scripts? Read <a href="/blog/dental-patient-reactivation-text-templates">dental patient reactivation text templates</a> and our <a href="/blog/gohighlevel-for-dental-practices">GoHighLevel for dentists guide</a>.</p>
+    </div>
+  </section>
+
   <!-- ===== CTA BAND ===== -->
   <section class="section" style="padding-top:0;">
     <div class="container">
@@ -226,6 +272,16 @@
             <li><a href="/services">No-Show Defense</a></li>
             <li><a href="/services">Review Generation</a></li>
             <li><a href="/services">Recall &amp; Reactivation</a></li>
+            <li><a href="/automation">n8n &amp; Zapier Automation</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="/blog/">Blog &amp; Guides</a></li>
+            <li><a href="/blog/gohighlevel-for-dental-practices">GoHighLevel for Dentists</a></li>
+            <li><a href="/blog/dental-patient-reactivation-text-templates">Reactivation Text Templates</a></li>
+            <li><a href="/blog/reduce-med-spa-no-shows">Reduce Med Spa No-Shows</a></li>
           </ul>
         </div>
         <div class="footer-col">
@@ -251,8 +307,8 @@
     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
   </button>
 
-  <script defer src="/js/main.js?v=20261024d"></script>
-  <script defer src="/js/additions.js?v=20261024d"></script>
+  <script defer src="/js/main.js?v=20261103a"></script>
+  <script defer src="/js/additions.js?v=20261103a"></script>
   <script>
   /* GHL chat widget: loaded on first interaction (or after 8s) so it never slows the first paint */
   (function () {
