@@ -160,22 +160,29 @@
   }, { passive: true });
 })();
 
-/* ── YouTube click-to-play: swap the thumbnail for the player only when pressed ── */
+/* ── Explainer videos: self-hosted, nothing downloads until the visitor presses play.
+      Slow connections, data-saver and phones get the 720p file (~1.5 MB); others get 1080p (~3 MB). ── */
 (function () {
-  document.querySelectorAll('.yt-facade[data-yt]').forEach(function (el) {
+  document.querySelectorAll('.yt-facade[data-video]').forEach(function (el) {
     el.addEventListener('click', function (e) {
       if (el.classList.contains('is-playing')) return;
       e.preventDefault();
-      var f = document.createElement('iframe');
-      f.src = 'https://www.youtube-nocookie.com/embed/' + el.getAttribute('data-yt') + '?autoplay=1&rel=0&modestbranding=1&playsinline=1';
-      f.title = el.getAttribute('aria-label') || 'Video';
-      f.allow = 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share';
-      f.allowFullscreen = true;
+      var c = navigator.connection || {};
+      var light = c.saveData || /(^|-)2g|3g/.test(c.effectiveType || '') || window.innerWidth < 900;
+      var name = el.getAttribute('data-video');
+      var img = el.querySelector('img');
+      var v = document.createElement('video');
+      v.src = '/videos/' + name + (light ? '-720' : '-1080') + '.mp4';
+      v.controls = true; v.autoplay = true; v.playsInline = true; v.preload = 'auto';
+      v.setAttribute('playsinline', ''); v.setAttribute('controlsList', 'nodownload');
+      if (img) v.poster = img.currentSrc || img.src;
+      v.setAttribute('aria-label', el.getAttribute('aria-label') || 'Video');
       el.innerHTML = '';
-      el.appendChild(f);
+      el.appendChild(v);
       el.classList.add('is-playing');
       el.removeAttribute('href');
-      if (window.gtag) { try { gtag('event', 'video_play', { video_id: el.getAttribute('data-yt'), page: location.pathname }); } catch (_) {} }
+      var p = v.play(); if (p && p.catch) p.catch(function () {});
+      if (window.gtag) { try { gtag('event', 'video_play', { video: name, quality: light ? '720' : '1080', page: location.pathname }); } catch (_) {} }
     });
   });
 })();

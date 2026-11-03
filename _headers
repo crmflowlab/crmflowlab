@@ -28,3 +28,7 @@
   Cache-Control: public, max-age=86400
 /llms.txt
   Content-Type: text/plain; charset=utf-8
+
+/videos/*
+  Cache-Control: public, max-age=2592000
+  Content-Type: video/mp4
