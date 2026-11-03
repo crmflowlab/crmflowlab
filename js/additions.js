@@ -159,3 +159,23 @@
     else if (/^(mailto:|tel:)/.test(href)) send('contact_link_click', { link_type: href.split(':')[0] });
   }, { passive: true });
 })();
+
+/* ── YouTube click-to-play: swap the thumbnail for the player only when pressed ── */
+(function () {
+  document.querySelectorAll('.yt-facade[data-yt]').forEach(function (el) {
+    el.addEventListener('click', function (e) {
+      if (el.classList.contains('is-playing')) return;
+      e.preventDefault();
+      var f = document.createElement('iframe');
+      f.src = 'https://www.youtube-nocookie.com/embed/' + el.getAttribute('data-yt') + '?autoplay=1&rel=0&modestbranding=1&playsinline=1';
+      f.title = el.getAttribute('aria-label') || 'Video';
+      f.allow = 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share';
+      f.allowFullscreen = true;
+      el.innerHTML = '';
+      el.appendChild(f);
+      el.classList.add('is-playing');
+      el.removeAttribute('href');
+      if (window.gtag) { try { gtag('event', 'video_play', { video_id: el.getAttribute('data-yt'), page: location.pathname }); } catch (_) {} }
+    });
+  });
+})();
