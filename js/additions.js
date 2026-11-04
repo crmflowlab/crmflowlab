@@ -172,7 +172,7 @@
       var name = el.getAttribute('data-video');
       var img = el.querySelector('img');
       var v = document.createElement('video');
-      v.src = '/videos/' + name + (light ? '-720' : '-1080') + '.mp4';
+      v.src = '/videos/' + name + (light ? '-720' : '-1080') + '.mp4?v=2';
       v.controls = true; v.autoplay = true; v.playsInline = true; v.preload = 'auto';
       v.setAttribute('playsinline', ''); v.setAttribute('controlsList', 'nodownload');
       if (img) v.poster = img.currentSrc || img.src;
