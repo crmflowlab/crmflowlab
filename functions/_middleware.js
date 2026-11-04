@@ -5,5 +5,10 @@ export async function onRequest(context) {
     url.hostname = 'www.crmflowlab.com';
     return Response.redirect(url.toString(), 301);
   }
+  // Old blog slug moved: keep any existing links and search results working.
+  if (url.pathname === '/blog/gohighlevel-for-dental-practices' || url.pathname === '/blog/gohighlevel-for-dental-practices.html') {
+    url.pathname = '/blog/dental-practice-crm-automation';
+    return Response.redirect(url.toString(), 301);
+  }
   return context.next();
 }

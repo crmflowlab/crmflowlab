@@ -762,11 +762,11 @@ ul { list-style: none; }
 .savings-amount span { font-size: 20px; }
 .savings-bottom { font-size: 11px; color: var(--text-muted); }
 
-/* GHL platform card */
-.ghl-platform-card {
+/* System platform card */
+.sys-platform-card {
   text-align: center;
 }
-.ghl-logo-badge {
+.sys-logo-badge {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -779,23 +779,23 @@ ul { list-style: none; }
   margin-bottom: 12px;
   box-shadow: 0 0 24px rgba(217, 121, 31,0.35);
 }
-.ghl-platform-name {
+.sys-platform-name {
   font-size: 18px;
   font-weight: 800;
   color: var(--text);
   margin-bottom: 4px;
 }
-.ghl-platform-sub {
+.sys-platform-sub {
   font-size: 12px;
   color: var(--text-muted);
   margin-bottom: 20px;
 }
-.ghl-features-grid {
+.sys-features-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 8px;
 }
-.ghl-features-grid span {
+.sys-features-grid span {
   font-size: 13px;
   color: var(--text-dim);
   background: rgba(217, 121, 31,0.06);
@@ -908,25 +908,25 @@ ul { list-style: none; }
   border-radius: 50%;
 }
 
-/* ===== WHY GHL ===== */
-.why-ghl {
+/* ===== WHY SYSTEM ===== */
+.why-sys {
   background: linear-gradient(135deg, #FFFFFF 0%, #FBF1E7 100%);
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
 }
 
-.why-ghl-inner {
+.why-sys-inner {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
   gap: 80px;
   align-items: center;
 }
-.why-ghl-text .section-title,
-.why-ghl-text .section-subtitle,
-.why-ghl-text .section-tag { text-align: left; margin-left: 0; }
-.why-ghl-text .section-subtitle { margin-bottom: 32px; }
+.why-sys-text .section-title,
+.why-sys-text .section-subtitle,
+.why-sys-text .section-tag { text-align: left; margin-left: 0; }
+.why-sys-text .section-subtitle { margin-bottom: 32px; }
 
-.why-ghl-benefits {
+.why-sys-benefits {
   display: flex;
   flex-direction: column;
   gap: 18px;
@@ -1448,7 +1448,7 @@ ul { list-style: none; }
   .hero-inner        { grid-template-columns: 1fr; }
   .hero-visual       { display: none; }
   .services-grid     { grid-template-columns: repeat(2, 1fr); }
-  .why-ghl-inner     { grid-template-columns: 1fr; gap: 48px; }
+  .why-sys-inner     { grid-template-columns: 1fr; gap: 48px; }
   .tools-infographic { grid-template-columns: 1fr; }
   .tools-center      { flex-direction: row; justify-content: center; gap: 24px; }
   .steps-grid        { grid-template-columns: 1fr; }
@@ -1499,7 +1499,7 @@ ul { list-style: none; }
 
   .footer-links { grid-template-columns: 1fr 1fr; }
 
-  .ghl-features-grid { grid-template-columns: 1fr 1fr; }
+  .sys-features-grid { grid-template-columns: 1fr 1fr; }
 }
 
 @media (max-width: 480px) {

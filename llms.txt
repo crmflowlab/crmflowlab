@@ -1,18 +1,18 @@
 # CRM Flow Lab
 
-> CRM Flow Lab is a GoHighLevel agency that builds CRM and marketing automation systems for dental clinics and med spas in the US, UK, Canada, Australia and New Zealand. It also builds n8n and Zapier business automations for any business. Founded by Usman Ali, a GoHighLevel builder with about three years of hands-on experience.
+> CRM Flow Lab is an automation agency that builds CRM and marketing automation systems for dental clinics and med spas in the US, UK, Canada, Australia and New Zealand. It also builds n8n and Zapier business automations for any business. Founded by Usman Ali, who has about three years of hands-on experience building CRM and automation systems.
 
 Key facts:
-- Services: booking funnels, instant lead response (sub-60-second SMS/email), no-show reminders, review generation, hygiene recall and patient reactivation, complete GoHighLevel setup, and n8n/Zapier automation.
-- Pricing: Starter from $497 one-time; Growth (managed) from $997/month; Scale (multi-location) custom. The GoHighLevel subscription is paid directly to HighLevel by the client.
+- Services: booking funnels, instant lead response (sub-60-second SMS/email), no-show reminders, review generation, hygiene recall and patient reactivation, complete CRM setup, and n8n/Zapier automation.
+- Pricing: Starter from $497 one-time; Growth (managed) from $997/month; Scale (multi-location) custom. The software subscription is paid directly to the platform provider by the client.
 - Typical launch time: 7-14 days from the strategy call.
-- Clients own their GoHighLevel account, data and automations. Monthly plans cancel with 30 days' notice.
+- Clients own their account, data and automations. Monthly plans cancel with 30 days' notice.
 - Contact: book a free 15-minute strategy call at https://www.crmflowlab.com/book
 
 ## Main pages
-- [Home](https://www.crmflowlab.com/): GoHighLevel systems for dental clinics and med spas
-- [GoHighLevel for dental clinics](https://www.crmflowlab.com/dental): lead follow-up, reminders, hygiene recall, treatment-plan follow-up, reviews
-- [GoHighLevel for med spas](https://www.crmflowlab.com/medspa): inquiry response, consult deposits, rebooking, memberships, reviews
+- [Home](https://www.crmflowlab.com/): patient follow-up systems for dental clinics and med spas
+- [Dental clinics](https://www.crmflowlab.com/dental): lead follow-up, reminders, hygiene recall, treatment-plan follow-up, reviews
+- [Med spas](https://www.crmflowlab.com/medspa): inquiry response, consult deposits, rebooking, memberships, reviews
 - [Services](https://www.crmflowlab.com/services): the six systems CRM Flow Lab builds, in detail
 - [n8n & Zapier automation](https://www.crmflowlab.com/automation): business process automation for any business
 - [Pricing](https://www.crmflowlab.com/pricing): plans and what each includes
@@ -20,6 +20,6 @@ Key facts:
 - [About](https://www.crmflowlab.com/about): the founder and how the agency works
 
 ## Guides
-- [GoHighLevel for dentists](https://www.crmflowlab.com/blog/gohighlevel-for-dental-practices): what GoHighLevel does for a dental practice, cost and setup order
+- [Dental CRM automation guide](https://www.crmflowlab.com/blog/dental-practice-crm-automation): what CRM automation does for a dental practice, cost and setup order
 - [Dental patient reactivation text templates](https://www.crmflowlab.com/blog/dental-patient-reactivation-text-templates): 15 copy-and-paste recall and win-back texts
 - [How to reduce med spa no-shows](https://www.crmflowlab.com/blog/reduce-med-spa-no-shows): nine practical fixes
