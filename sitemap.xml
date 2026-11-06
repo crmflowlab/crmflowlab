@@ -8,25 +8,25 @@
   </url>
   <url>
     <loc>https://www.crmflowlab.com/dental</loc>
-    <lastmod>2026-11-03</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.crmflowlab.com/medspa</loc>
-    <lastmod>2026-11-03</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.crmflowlab.com/services</loc>
-    <lastmod>2026-11-03</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.crmflowlab.com/automation</loc>
-    <lastmod>2026-11-03</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -62,7 +62,7 @@
   </url>
   <url>
     <loc>https://www.crmflowlab.com/blog/</loc>
-    <lastmod>2026-11-03</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -81,6 +81,12 @@
   <url>
     <loc>https://www.crmflowlab.com/blog/reduce-med-spa-no-shows</loc>
     <lastmod>2026-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.crmflowlab.com/blog/dental-appointment-reminder-text-templates</loc>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
