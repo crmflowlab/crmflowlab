@@ -1397,6 +1397,9 @@ ul { list-style: none; }
 }
 .footer-brand .logo { font-size: 20px; }
 .footer-tagline { color: var(--text-muted); font-size: 14px; margin: 10px 0 20px; }
+.footer-contact { color: var(--text-muted); font-size: 13px; line-height: 1.6; margin: 0 0 20px; }
+.footer-contact a { color: inherit; text-decoration: none; }
+.footer-contact a:hover { color: var(--accent, #C06014); text-decoration: underline; }
 .social-links { display: flex; gap: 12px; }
 .social-link {
   width: 38px; height: 38px;
