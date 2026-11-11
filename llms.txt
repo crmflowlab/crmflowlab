@@ -34,6 +34,8 @@ Key facts:
 - [Review request texts for dental and med spa](https://www.crmflowlab.com/blog/review-request-texts-for-dental-and-med-spa): when to ask, 6 copy-and-paste texts, handling unhappy patients and what to automate
 - [Med spa inquiry response texts](https://www.crmflowlab.com/blog/med-spa-inquiry-response-texts): why the first reply matters, 6 copy-and-paste texts to send within a minute, a follow-up sequence and what to automate
 
+- [Med spa rebooking reminder texts](https://www.crmflowlab.com/blog/med-spa-rebooking-reminder-texts): why clients stop after one visit, 6 copy-and-paste reminders, when to send them and what to automate
+
 ## Legal
 - [Privacy policy](https://www.crmflowlab.com/privacy-policy)
 - [Terms](https://www.crmflowlab.com/terms)

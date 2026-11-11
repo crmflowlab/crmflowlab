@@ -1096,7 +1096,7 @@ ul { list-style: none; }
   50%      { transform: scale(1.1); opacity: 0; }
 }
 
-.step h3 { font-size: 18px; font-weight: 700; margin-bottom: 12px; }
+.step h3, .step h2 { font-size: 18px; font-weight: 700; margin-bottom: 12px; }
 .step p   { font-size: 14px; color: var(--text-muted); line-height: 1.7; margin-bottom: 16px; }
 
 .step-tag {

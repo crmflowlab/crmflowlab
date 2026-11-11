@@ -256,7 +256,7 @@ h1.rise { opacity: 1; animation-name: riseInMove; animation-delay: 0s; animation
 
 /* ---------- Two-column feature rows ---------- */
 .split { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
-.split h3 { font-size: 26px; font-weight: 800; margin: 0 0 12px; }
+.split h3, .split h2 { font-size: 26px; font-weight: 800; margin: 0 0 12px; }
 .split p { color: var(--text-muted); line-height: 1.75; margin: 0 0 14px; }
 .check-list { display: grid; gap: 10px; margin-top: 18px; }
 .check-list li { display: flex; gap: 12px; align-items: flex-start; font-size: 15px; }
